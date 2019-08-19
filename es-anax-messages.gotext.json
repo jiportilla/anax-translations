@@ -4143,7 +4143,7 @@
     {
       "id": "found {Lenpieces} token(s), expecting 3 in an expression {Expression}, expected form is expression with 3 tokens: <property> <operator> <value> in constraint expression",
       "message": "found {Lenpieces} token(s), expecting 3 in an expression {Expression}, expected form is expression with 3 tokens: <property> <operator> <value> in constraint expression",
-      "translation": "se han encontrado {Lenpiezas} señal (s), se esperaba 3 en una expresión {Expression}, el formato esperado es expresión con 3 señales: <property><operator><value> en la expresión de restricción",
+      "translation": "se han encontrado {Lenpieces} señal (s), se esperaba 3 en una expresión {Expression}, el formato esperado es expresión con 3 señales: <property><operator><value> en la expresión de restricción",
       "placeholders": [
         {
           "id": "Lenpieces",
