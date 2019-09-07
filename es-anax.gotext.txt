@@ -1,0 +1,194 @@
+1-;-Deployment config {Arg_1} contains unsupported capability for a workload-;-La configuración de despliegue {Arg_1} contiene la capacidad no soportada para una carga de trabajo
+2-;-Deployment config {Arg_1} contains unsupported capability for infrastructure container.-;-La configuración de despliegue {Arg_1} contiene la capacidad no soportada para el contenedor de infraestructura.
+3-;-Deployment config {Arg_1} contains unsupported bind for a workload, {Arg_2}-;-La configuración de despliegue {Arg_1} contiene un enlace no soportado para una carga de trabajo, {Arg_2}
+4-;-Deployment config {Arg_1} contains unsupported bind for {Arg_2}, {Arg_3}-;-La configuración de despliegue {Arg_1} contiene un enlace no soportado para {Arg_2}, {Arg_3}
+5-;-Error Unmarshalling deployment string {Arg_1}, error: {Arg_2}-;-Error al desmarcando la serie de despliegue {Arg_1}, error: {Arg_2}
+6-;-Error Unmarshalling deployment override string {Arg_1} for agreement {Arg_2}, error: {Arg_3}-;-Error al desmarcando la serie de alteración temporal de despliegue {Arg_1} para el acuerdo {Arg_2}, error: {Arg_3}
+7-;-Error starting containers: {Arg_1}-;-Error al iniciar los contenedores: {Arg_1}
+8-;-Error starting containers for agreement {Arg_1}: {Arg_2}-;-Error al iniciar contenedores para el acuerdo {Arg_1}: {Arg_2}
+9-;-Error restarting containers for agreements {Arg_1}: {Arg_2}-;-Error al reiniciar los contenedores para los acuerdos {Arg_1}: {Arg_2}
+10-;-Error cleaning up old containers before starting up new containers for {Arg_1}. Error: {Arg_2}-;-Se ha producido un error al borrar los contenedores antiguos antes de iniciar nuevos contenedores para {Arg_1}. Error: {Arg_2}
+11-;-Failed to get a list of parent containers for service retry for {Arg_1}. {Arg_2}-;-No se ha podido obtener una lista de contenedores padre para el reintento de servicio de {Arg_1}. {Arg_2}
+12-;-Failed to restoring the network connection with the parents for service {Arg_1}. {Arg_2}-;-No se ha podido restaurar la conexión de red con los padres para el servicio {Arg_1}. {Arg_2}
+13-;-Error retrieving agreement {Arg_1} from database, error {Arg_2}-;-Error al recuperar el acuerdo {Arg_1} de la base de datos, error {Arg_2}
+14-;-Unable to retrieve agreement {Arg_1} from database for MeteringNotification message, error {Arg_2}-;-No se ha podido recuperar el acuerdo {Arg_1} de la base de datos para el mensaje MeteringNotification, error {Arg_2}
+15-;-Unable to retrieve agreement {Arg_1} from database for Cancel message, error {Arg_2}-;-No se ha podido recuperar el acuerdo {Arg_1} de la base de datos para el mensaje de cancelación, error {Arg_2}
+16-;-Unable to retrieve agreement {Arg_1} from database for ReplyAck message, error {Arg_2}-;-No se ha podido recuperar el acuerdo {Arg_1} de la base de datos para el mensaje ReplyAck, error {Arg_2}
+17-;-Unable to retrieve agreement {Arg_1} from database for DataReceived message, error {Arg_2}-;-No se ha podido recuperar el acuerdo {Arg_1} de la base de datos para el mensaje de DataReceived, error {Arg_2}
+18-;-Unable to retrieve unarchived agreements from database. {Arg_1}-;-No se pueden recuperar los acuerdos sin archivar de la base de datos. {Arg_1}
+19-;-Error marking agreement {Arg_1} terminated in database: {Arg_2}.-;-Error al marcar el acuerdo {Arg_1} terminado en la base de datos: {Arg_2}.
+20-;-Error getting service definitions {Arg_1} from db. {Arg_2}-;-Error al obtener las definiciones de servicio {Arg_1} de la base de datos. {Arg_2}
+21-;-Error retrieving all service instances from database for {Arg_1}/{Arg_2} version {Arg_3} key {Arg_4}. {Arg_5}-;-Error al recuperar todas las instancias de servicio desde la base de datos para la clave {Arg_1}/ {Arg_2} versión {Arg_3} clave {Arg_4}. {Arg_5}
+22-;-Error retrieving all service instances from database for {Arg_1}. {Arg_2}-;-Error al recuperar todas las instancias de servicio de la base de datos para {Arg_1}. {Arg_2}
+23-;-Error retrieving all service instances from database, error: {Arg_1}-;-Error al recuperar todas las instancias de servicio de la base de datos, error: {Arg_1}
+24-;-Error getting service instance {Arg_1} from db. {Arg_2}-;-Error al obtener la instancia de servicio {Arg_1} de la base de datos. {Arg_2}
+25-;-Error retrieving matching agreements from database for workloads {Arg_1}. Error: {Arg_2}-;-Error al recuperar los acuerdos coincidentes de la base de datos para cargas de trabajo {Arg_1}. Error: {Arg_2}
+26-;-Unable to retrieve the service configuration state for node resource {Arg_1} from the exchange, error {Arg_2}-;-No se puede recuperar el estado de configuración de servicio para el recurso de nodo {Arg_1} de la bolsa, error {Arg_2}
+27-;-Error retrieving node {Arg_1} from the exchange: {Arg_2}-;-Error al recuperar el nodo {Arg_1} del Exchange: {Arg_2}
+28-;-Error updating registeredServices for node {Arg_1} in the exchange: {Arg_2}-;-Error al actualizar registeredServices para el nodo {Arg_1} en el Exchange: {Arg_2}
+29-;-Image loaded for {Arg_1}/{Arg_2}.-;-Se ha cargado la imagen para {Arg_1}/ {Arg_2}.
+30-;-Image loaded for service {Arg_1}/{Arg_2}.-;-Se ha cargado la imagen para el servicio {Arg_1}/ {Arg_2}.
+31-;-Error loading image for {Arg_1}/{Arg_2}.-;-Error al cargar la imagen para {Arg_1}/ {Arg_2}.
+32-;-Error loading image for service {Arg_1}/{Arg_2}.-;-Error al cargar la imagen para el servicio {Arg_1}/ {Arg_2}.
+33-;-Start terminating agreement for {Arg_1}. Termination reason: {Arg_2}-;-Se inicia el acuerdo de terminación para {Arg_1}. Razón de la terminación: {Arg_2}
+34-;-Agreement reached for service {Arg_1}. The agreement id is {Arg_2}.-;-Se ha alcanzado un acuerdo para el servicio {Arg_1}. El ID de acuerdo es {Arg_2}.
+35-;-Agreement for {Arg_1} no longer valid on the agbot. Node will cancel it.-;-El acuerdo para {Arg_1} ya no es válido en el agbot. El nodo lo cancelará.
+36-;-Workload service containers for {Arg_1}/{Arg_2} are up and running.-;-Los contenedores de servicio de carga de trabajo para {Arg_1}/ {Arg_2} están en ejecución.
+37-;-Complete terminating agreement for {Arg_1}. Termination reason: {Arg_2}-;-Completar acuerdo de terminación para {Arg_1}. Razón de la terminación: {Arg_2}
+38-;-Error deleting agreement for {Arg_1} in exchange: {Arg_2}. Will retry.-;-Error al suprimir el acuerdo para {Arg_1} a cambio: {Arg_2}. Volverá a intentarlo.
+39-;-Encountered error for AgreementVerification for {Arg_1} with agbot, error {Arg_2}-;-Se ha encontrado un error para AgreementVerification for {Arg_1} con agbot, error {Arg_2}
+40-;-ReplyAck indicated that the agbot did not want to pursue the agreement for {Arg_1}. Node will cancel the agreement-;-ReplyAck indicó que el agbot no quería llevar a cabo el acuerdo para {Arg_1}. El nodo cancelará el acuerdo
+41-;-Node received Cancel message for {Arg_1}/{Arg_2} from agbot {Arg_3}.-;-El nodo ha recibido el mensaje Cancelar para {Arg_1}/ {Arg_2} del agbot {Arg_3}.
+42-;-Error handling ReplyAck message for {Arg_1}. {Arg_2}-;-Error al manejar el mensaje ReplyAck para {Arg_1}. {Arg_2}
+43-;-Error handling ReplyAck message. {Arg_1}-;-Error al manejar el mensaje ReplyAck. {Arg_1}
+44-;-Error handling DataReceived message for {Arg_1}. {Arg_2}-;-Error al manejar el mensaje de DataReceived para {Arg_1}. {Arg_2}
+45-;-Error handling DataReceived message. {Arg_1}-;-Error al manejar el mensaje DataReceived. {Arg_1}
+46-;-Error handling MeterNotification message for {Arg_1}. {Arg_2}-;-Error al manejar el mensaje MeterNotification para {Arg_1}. {Arg_2}
+47-;-Error handling MeterNotification message. {Arg_1}-;-Error al manejar el mensaje MeterNotification. {Arg_1}
+48-;-Error handling Cancel message for {Arg_1}. {Arg_2}-;-Error al manejar el mensaje Cancelar para {Arg_1}. {Arg_2}
+49-;-Error handling Cancel message. {Arg_1}-;-Error al manejar el mensaje de cancelación. {Arg_1}
+50-;-Start workload service for {Arg_1}/{Arg_2}.-;-Iniciar servicio de carga de trabajo para {Arg_1}/ {Arg_2}.
+51-;-Workload destroyed for {Arg_1}-;-Carga de trabajo destruida para {Arg_1}
+52-;-Service containers for {Arg_1} started.-;-Se han iniciado los contenedores de servicios para {Arg_1}.
+53-;-Complete cleaning up the service instance {Arg_1}.-;-Complete la limpieza de la instancia de servicio {Arg_1}.
+54-;-Start dependent services for {Arg_1}/{Arg_2}.-;-Iniciar los servicios dependientes para {Arg_1}/ {Arg_2}.
+55-;-Encountered error starting dependen services for {Arg_1}/{Arg_2}. {Arg_3}-;-Se ha encontrado un error al iniciar los servicios de servicio para {Arg_1}/ {Arg_2}. {Arg_3}
+56-;-Error starting dependen service {Arg_1}/{Arg_2} version {Arg_3} for agreement {Arg_4}. {Arg_5}-;-Se ha producido un error al iniciar el servicio {Arg_1}/ {Arg_2} versión {Arg_3} para el acuerdo {Arg_4}. {Arg_5}
+57-;-Start cleaning up service {Arg_1} because agreement {Arg_2} ended.-;-Iniciar la limpieza de servicio {Arg_1} porque el acuerdo {Arg_2} ha finalizado.
+58-;-Error starting service {Arg_1}/{Arg_2} version {Arg_3}, error: {Arg_4}-;-Se ha producido un error al iniciar el servicio {Arg_1}/ {Arg_2} versión {Arg_3}, error: {Arg_4}
+59-;-Error getting all the services from agreements: {Arg_1}-;-Error al obtener todos los servicios de los acuerdos: {Arg_1}
+60-;-Start agreement-less service {Arg_1}/{Arg_2}.-;-Iniciar contrato-less servicio {Arg_1}/ {Arg_2}.
+61-;-Complete starting agreement-less service {Arg_1}/{Arg_2} and its dependents.-;-Completar el acuerdo inicial-less service {Arg_1}/ {Arg_2} y sus dependientes.
+62-;-Unable to start agreement-less service {Arg_1}/{Arg_2}, error {Arg_3}-;-No se ha podido iniciar el servicio {Arg_1}/ {Arg_2}, error {Arg_3}, error {Arg_3}
+63-;-Unable to start agreement-less services, error searching for pattern {Arg_1} in exchange, error: {Arg_2}-;-No se han podido iniciar los servicios sin acuerdo, error al buscar el patrón {Arg_1} a cambio, error: {Arg_2}
+64-;-Unable to start agreement-less services, pattern {Arg_1} not found in exchange-;-No se pueden iniciar los servicios sin acuerdo, el patrón {Arg_1} no se ha encontrado a cambio
+65-;-Unable to start agreement-less service {Arg_1}/{Arg_2}, local service definition not found-;-No se ha podido iniciar el servicio {Arg_1}/ {Arg_2}, no se ha encontrado la definición de servicio local
+66-;-Start upgrading service {Arg_1}/{Arg_2} from version {Arg_3} to version {Arg_4}.-;-Inicie la actualización del servicio {Arg_1}/ {Arg_2} de la versión {Arg_3} a la versión {Arg_4}.
+67-;-Complete upgrading service {Arg_1}/{Arg_2} from version {Arg_3} to version {Arg_4}.-;-Se ha completado la actualización del servicio {Arg_1}/ {Arg_2} de la versión {Arg_3} a la versión {Arg_4}.
+68-;-Failed to upgrade service {Arg_1}/{Arg_2} from version {Arg_3} to version {Arg_4}, error: {Arg_5}-;-No se ha podido actualizar el servicio {Arg_1}/ {Arg_2} de la versión {Arg_3} a la versión {Arg_4}, error: {Arg_5}
+69-;-Start downgrading service {Arg_1}/{Arg_2} version {Arg_3} because service for agreement failed to start.-;-Inicie el servicio de degradación {Arg_1}/ {Arg_2} versión {Arg_3} porque no se ha podido iniciar el servicio para el acuerdo.
+70-;-Start downgrading service {Arg_1}/{Arg_2} version {Arg_3} because service failed to start.-;-Inicie el servicio de degradación {Arg_1}/ {Arg_2} versión {Arg_3} porque el servicio no se ha podido iniciar.
+71-;-Start downgrading service {Arg_1}/{Arg_2} version {Arg_3} because upgrade failed.-;-Inicie el servicio de degradación {Arg_1}/ {Arg_2} versión {Arg_3} porque la actualización ha fallado.
+72-;-Failed to downgrade service {Arg_1}/{Arg_2} version {Arg_3}, error: {Arg_4}-;-No se ha podido degradar el servicio {Arg_1}/ {Arg_2} versión {Arg_3}, error: {Arg_4}
+73-;-Complete downgrading service {Arg_1}/{Arg_2} from version {Arg_3} to version {Arg_4}.-;-Se ha completado el servicio de degradación {Arg_1}/ {Arg_2} de la versión {Arg_3} a la versión {Arg_4}.
+74-;-Error finding the new service definition to downgrade to for {Arg_1}/{Arg_2} version {Arg_3} key {Arg_4}. error: {Arg_5}-;-Error al buscar la nueva definición de servicio a degradar a para la clave {Arg_1}/ {Arg_2} versión {Arg_3} clave {Arg_4}. error: {Arg_5}
+75-;-Could not find lower version to downgrade for {Arg_1}/{Arg_2} version {Arg_3}.-;-No se ha podido encontrar una versión inferior para degradar la versión de {Arg_1}/ {Arg_2} versión {Arg_3}.
+76-;-Error downgrading service {Arg_1}/{Arg_2} from version {Arg_3} to version {Arg_4}. Eror: {Arg_5}-;-Error al degradar el servicio {Arg_1}/ {Arg_2} de la versión {Arg_3} a la versión {Arg_4}. Eror: {Arg_5}
+77-;-Error downgrading service {Arg_1}/{Arg_2} version {Arg_3}. {Arg_4}-;-Error al degradar el servicio {Arg_1}/ {Arg_2} versión {Arg_3}. {Arg_4}
+78-;-Start retrying number {Arg_1} for dependent service {Arg_2} version {Arg_3} because service failed.-;-Iniciar el reintento de número {Arg_1} para el servicio dependiente {Arg_2} versión {Arg_3} porque el servicio ha fallado.
+79-;-Failed retrying number {Arg_1} for dependent service {Arg_2} version {Arg_3}.-;-No se ha podido reintentar el número de reintento {Arg_1} para el servicio dependiente {Arg_2} versión {Arg_3}.
+80-;-Failed to get the service retry count for {Arg_1} version {Arg_2}. {Arg_3}-;-No se ha podido obtener el recuento de reintentos de servicio para la versión {Arg_1} versión {Arg_2}. {Arg_3}
+81-;-Error updating retry start state for service instance {Arg_1} in dadabase. {Arg_2}-;-Error al actualizar el estado de inicio de reintento para la instancia de servicio {Arg_1} en la database. {Arg_2}
+82-;-Version_Expression: Whitespace is not permitted in {Expr}.-;-Version_Expression: El espacio en blanco no está permitido en {Expr}.
+83-;-Version_Expression: {Verstring} is not a valid version string.-;-Version_Expression: {Verstring} no es una serie de versión válida.
+84-;-Version_Expression: {Verstring} does not begin with an inclusion or exclusion directive.-;-Version_Expression: {Verstring} no empieza con una directiva de inclusión o exclusión.
+85-;-Version_Expression: {Verstring} does not end with an inclusion or exclusion directive.-;-Version_Expression: {Verstring} no termina con una directiva de inclusión o exclusión.
+86-;-Version_Expression: Incorrect number of versions in expression: {Expr}.-;-Version_Expression: Número incorrecto de versiones en la expresión: {Expr}.
+87-;-Input version string {V1} or {V2} is not a valid single version string.-;-La serie de versión de entrada {V1} o {V2} no es una serie de versión única válida.
+88-;-properties contains an invalid property: {Err}-;-Las propiedades contienen una propiedad no válida: {Err}
+89-;-Property must include a name and a value: {Property}-;-La propiedad debe incluir un nombre y un valor: {Property}
+90-;-Property {Name} has invalid property type {DeclaredType}. Allowed property types are: version, string, int, boolean, float, and list of string.-;-La propiedad {Name} tiene un tipo de propiedad no válido {DeclaredType}. Los tipos de propiedad permitidos son: version, string, int, boolean, float, and list of string.
+91-;-Property value is of type {ActualType}, expected type {DeclaredType}-;-El valor de la propiedad es de tipo {ActualType}, se esperaba el tipo {DeclaredType}
+92-;-Value {Value} of property {Name} is not an integer type-;-El valor {Value} de la propiedad {Name} no es un tipo entero
+93-;-Value {Value} of property {Name} is not a valid string. Please define type or change value to a string.-;-El valor {Value} de la propiedad {Name} no es una serie válida. Defina el tipo o el valor de cambio en una serie.
+94-;-Property {Name} with value {Value} is not a valid verion string-;-La propiedad {Name} con el valor {Value} no es una serie de verion válida
+95-;-Property {Name} has invalid value type {ActualType}-;-La propiedad {Name} tiene un tipo de valor no válido {ActualType}
+96-;-Unable to read policy file {Arg_1} for service {Arg_2}, error: {Arg_3}-;-No se ha podido leer el archivo de políticas {Arg_1} para el servicio {Arg_2}, error: {Arg_3}
+97-;-Start policy advertising with the exchange for service {Arg_1}/{Arg_2}.-;-Iniciar la publicidad de políticas con el Exchange para el servicio {Arg_1}/ {Arg_2}.
+98-;-Unable to advertise policies with exchange for service {Arg_1}/{Arg_2}, error: {Arg_3}-;-No se han podido anunciar las políticas con el Exchange para el servicio {Arg_1}/ {Arg_2}, error: {Arg_3}
+99-;-Complete policy advertising with the exchange for service {Arg_1}/{Arg_2}.-;-Publicidad de política completa con el Exchange para el servicio {Arg_1}/ {Arg_2}.
+100-;-Node heartbeat failed for node {Arg_1}/{Arg_2}. Error: {Arg_3}-;-El latido de nodo ha fallado para el nodo {Arg_1}/ {Arg_2}. Error: {Arg_3}
+101-;-Node heartbeat restored for node {Arg_1}/{Arg_2}.-;-Se ha restaurado el latido de nodo para el nodo {Arg_1}/ {Arg_2}.
+102-;-unable to read node policy from the local database. {Arg_1}-;-no se puede leer la política de nodo de la base de datos local. {Arg_1}
+103-;-Unable to read node object from the local database. {Arg_1}-;-No se puede leer el objeto de nodo de la base de datos local. {Arg_1}
+104-;-Unable to sync the local node policy with the exchange copy. Error: {Arg_1}-;-No se ha podido sincronizar la política de nodo local con la copia de Exchange. Error: {Arg_1}
+105-;-Node policy updated with the exchange copy: {Arg_1}-;-Política de nodo actualizada con la copia de Exchange: {Arg_1}
+106-;-Unable to sync the local node user input with the exchange copy. Error: {Arg_1}-;-No se ha podido sincronizar la entrada de usuario de nodo local con la copia de Exchange. Error: {Arg_1}
+107-;-Node user input updated with the exchange copy. The changed user inputs are: {Arg_1}-;-Entrada de usuario de nodo actualizada con la copia de Exchange. Las entradas de usuario cambiadas son: {Arg_1}
+108-;-Node could not verify the agreement {Arg_1} with the consumer. Will cancel it-;-El nodo no ha podido verificar el acuerdo {Arg_1} con el consumidor. Se cancelará
+109-;-Node is offline. Logging of periodic offline error messages will be curtailed until connection is restored-;-El nodo está fuera de línea. El registro de los mensajes de error fuera de línea periódicos se recortará hasta que se restaure la conexión
+110-;-Name, or Org is empty string.-;-Nombre, o Org es una serie vacía.
+111-;-The serviceVersions array is empty.-;-La matriz serviceVersions está vacía.
+112-;-unable to make directory for self signed MMS API certificate, error {Err}-;-no se ha podido crear el directorio para el certificado de la API MMS autofirmado, error {Err}
+113-;-unable to generate random number for MMS API certificate serial number, error {Err}-;-no se ha podido generar un número aleatorio para el número de serie del certificado de la API MMS, error {Err}
+114-;-unable to generate private key for MMS API certificate, error {Err}-;-no se ha podido generar la clave privada para el certificado de la API MMS, error {Err}
+115-;-unable to create MMS API certificate, error {Err}-;-no se ha podido crear el certificado de la API de MMS, error {Err}
+116-;-unable to write MMS API certificate to file {ServerCertificate}, error {Err}-;-no se puede escribir el certificado de la API MMS en el archivo {ServerCertificate}, error {Err}
+117-;-unable to encode MMS API certificate to file {ServerCertificate}, error {Err}-;-no se ha podido codificar el certificado de la API MMS en el archivo {ServerCertificate}, error {Err}
+118-;-unable to close MMS API certificate file {ServerCertificate}, error {Err}-;-no se puede cerrar el archivo de certificado de la API MMS {ServerCertificate}, error {Err}
+119-;-unable to write MMS API certificate private key to file {ServerKey}, error {Err}-;-no se puede escribir la clave privada de certificado de API MMS en el archivo {ServerKey}, error {Err}
+120-;-unable to encode MMS API certificate private key to file {ServerKey}, error {Err}-;-no se ha podido codificar la clave privada de certificado de API MMS en el archivo {ServerKey}, error {Err}
+121-;-unable to close MMS API certificate private key file {ServerKey}, error {Err}-;-no se ha podido cerrar el archivo de claves privadas de certificado de API de MMS {ServerKey}, error {Err}
+122-;-Agreement {Arg_1} already exists, ignoring proposal: {Arg_2}-;-El acuerdo {Arg_1} ya existe, ignorando la propuesta: {Arg_2}
+123-;-received error demarshalling TsAndCs for agrement {Arg_1}, {Arg_2}-;-se han recibido errores de la llamada de error de TsAndCs para el acuerdo {Arg_1}, {Arg_2}
+124-;-Node received Proposal message for service {Arg_1}/{Arg_2} from the agbot {Arg_3}.-;-El nodo ha recibido el mensaje de propuesta para el servicio {Arg_1}/ {Arg_2} del agbot {Arg_3}.
+125-;-Node rejected the proposal for service {Arg_1}/{Arg_2}.-;-El nodo ha rechazado la propuesta para el servicio {Arg_1}/ {Arg_2}.
+126-;-Error handling proposal for service {Arg_1}/{Arg_2}. Error: {Arg_3}-;-Se ha producido un error al manejar la propuesta para el servicio {Arg_1}/ {Arg_2}. Error: {Arg_3}
+127-;-Error parsing the selections {Form}. {Err}-;-Error al analizar las selecciones {Form}. {Err}
+128-;-Error getting {Resource} for output, error {Err}-;-Error al obtener {Resource} para la salida, error {Err}
+129-;-Error parsing input for node configuration/registration. Input body couldn't be deserialized to node object: {Arg_1}, error: {Arg_2}-;-Error al analizar la entrada para la configuración/registro del nodo. El cuerpo de entrada no se ha podido deserializar a un objeto de nodo: {Arg_1}, error: {Arg_2}
+130-;-Error parsing input for node configuration/registration. Input body couldn't be deserialized to configstate object: {Arg_1}, error: {Arg_2}-;-Error al analizar la entrada para la configuración/registro del nodo. El cuerpo de entrada no se ha podido deserializar al objeto configstate: {Arg_1}, error: {Arg_2}
+131-;-Error parsing input for node update. Input body couldn't be deserialized to node object: {Arg_1}, error: {Arg_2}-;-Error al analizar la entrada para la actualización de nodo. El cuerpo de entrada no se ha podido deserializar a un objeto de nodo: {Arg_1}, error: {Arg_2}
+132-;-Error parsing input for node policy. Input body could not be deserialized as a policy object: {Arg_1}, error: {Arg_2}-;-Error al analizar la entrada para la política de nodo. El cuerpo de entrada no se ha podido deserializar como un objeto de política: {Arg_1}, error: {Arg_2}
+133-;-Error parsing input for node policy patch. Input body could not be deserialized into a Constraint Expression or Property List: {Arg_1}, error: {Arg_2}-;-Error al analizar la entrada para el parche de política de nodo. El cuerpo de entrada no se ha podido deserializar en una expresión de restricción o en la lista de propiedades: {Arg_1}, error: {Arg_2}
+134-;-Error parsing input for node policy patch. Input body did not contain a Constraint Expression or Property List: {Arg_1}, error: {Arg_2}-;-Error al analizar la entrada para el parche de política de nodo. El cuerpo de entrada no contenía una expresión de restricción o la lista de propiedades: {Arg_1}, error: {Arg_2}
+135-;-Error parsing input for node user input. Input body could not be deserialized as a UserInput object: {Arg_1}, error: {Arg_2}-;-Error al analizar la entrada para la entrada de usuario de nodo. El cuerpo de entrada no se ha podido deserializar como un objeto UserInput: {Arg_1}, error: {Arg_2}
+136-;-Error in node configuration/registration for node {Arg_1}. {Arg_2}-;-Error en la configuración de nodo/registro para el nodo {Arg_1}. {Arg_2}
+137-;-Error in updating node {Arg_1}. {Arg_2}-;-Error al actualizar el nodo {Arg_1}. {Arg_2}
+138-;-Error in node unregistration. {Arg_1}-;-Error en el desregistro del nodo. {Arg_1}
+139-;-Error verifiying exchange version. error: {Arg_1}-;-Error de comprobación de versión de Exchange. error: {Arg_1}
+140-;-Error in creating or replacing node policy. {Arg_1}-;-Error al crear o sustituir la política de nodo. {Arg_1}
+141-;-Error in patching node policy. {Arg_1}-;-Error en aplicación de parches a la política de nodo. {Arg_1}
+142-;-Error in deleting node policy. {Arg_1}-;-Error al suprimir la política de nodo. {Arg_1}
+143-;-Error in updating node user input. {Arg_1}-;-Error al actualizar la entrada de usuario de nodo. {Arg_1}
+144-;-Error in patching node user input. {Arg_1}-;-Error en la aplicación de parches de entrada de usuario de nodo. {Arg_1}
+145-;-Error in deleting node userinput. {Arg_1}-;-Error al suprimir la entrada de usuario del nodo. {Arg_1}
+146-;-Start node configuration/registration for node {Arg_1}.-;-Iniciar la configuración/registro del nodo para el nodo {Arg_1}.
+147-;-Start updating node {Arg_1}.-;-Inicie la actualización del nodo {Arg_1}.
+148-;-Complete node update for {Arg_1}.-;-Complete la actualización de nodo para {Arg_1}.
+149-;-Start node unregistration.-;-Iniciar el desregistro del nodo.
+150-;-Node unregistration complete for node {Arg_1}.-;-Se ha completado la eliminación del registro del nodo para el nodo {Arg_1}.
+151-;-Error unregistring the node. The node is not found from the database.-;-Error al anular el registro del nodo. El nodo no se ha encontrado en la base de datos.
+152-;-Error unregistring the node. The node must be in 'configured' or 'configuring' state in order to unconfigure it.-;-Error al anular el registro del nodo. El nodo debe estar en estado 'configurado' o 'configurando' para poder desconfigurarlo.
+153-;-Input error for node unregistration. {Arg_1} is an incorrect value for removeNode-;-Error de entrada para el desregistro de nodo. {Arg_1} es un valor incorrecto para removeNode
+154-;-Input error for node unregistration. {Arg_1} is an incorrect value for deepClean-;-Error de entrada para el desregistro de nodo. {Arg_1} es un valor incorrecto para deepClean
+155-;-Input error for node unregistration. {Arg_1} is an incorrect value for block-;-Error de entrada para el desregistro de nodo. {Arg_1} es un valor incorrecto para el bloque
+156-;-Unable to read node object from database, error {Arg_1}-;-No se puede leer el objeto de nodo de la base de datos, error {Arg_1}
+157-;-Error saving new node config state (unconfiguring) in the database: {Arg_1}-;-Error al guardar el estado de configuración del nuevo nodo  (desconfigurando) en la base de datos: {Arg_1}
+158-;-Error in node configuration. The node is not found from the database.-;-Error en la configuración del nodo. El nodo no se ha encontrado en la base de datos.
+159-;-Error in node configuration. The node must be in 'configured' or 'configuring' state in order to change the state to {Arg_1}.-;-Error en la configuración del nodo. El nodo debe estar en estado 'configurado' o 'configurando' para poder cambiar el estado a {Arg_1}.
+160-;-Node state transition from '{Arg_1}' to '{Arg_2}' is not supported.-;-La transición de estado de nodo de '{Arg_1}' a '{Arg_2}' no está soportada.
+161-;-Failed get user input from local db. {Arg_1}-;-Error al obtener la entrada de usuario de la base de datos local {Arg_1}
+162-;-Failed to find preferences for service {Arg_1}/{Arg_2} from the local user input, error: {Arg_3}-;-No se han podido encontrar preferencias para el servicio {Arg_1}/ {Arg_2} de la entrada de usuario local, error: {Arg_3}
+163-;-Error saving new node config state to database: {Arg_1}-;-Error al guardar el nuevo estado de configuración de nodo en la base de datos: {Arg_1}
+164-;-Complete node configuration/registration for node {Arg_1}.-;-Complete la configuración/registro del nodo para el nodo {Arg_1}.
+165-;-Error in service configuration for {Arg_1}. {Arg_2}-;-Error en la configuración de servicio para {Arg_1}. {Arg_2}
+166-;-Error getting service references for pattern {Arg_1}. {Arg_2}-;-Error al obtener referencias de servicio para el patrón {Arg_1}. {Arg_2}
+167-;-New node policy: {Arg_1}-;-Política de nodo nueva: {Arg_1}
+168-;-Deleted node policy-;-Política de nodo suprimida
+169-;-New node user input: {Arg_1}-;-Nueva entrada de usuario de nodo: {Arg_1}
+170-;-No node user input to detele-;-No hay entrada de usuario de nodo a detele
+171-;-Deleted all node user input-;-Se ha suprimido toda la entrada de usuario de nodo
+172-;-Start service configuration with user input for {Arg_1}/{Arg_2}.-;-Iniciar la configuración de servicio con la entrada de usuario para {Arg_1}/ {Arg_2}.
+173-;-Start service auto configuration for {Arg_1}/{Arg_2}.-;-Iniciar la configuración automática de servicio para {Arg_1}/ {Arg_2}.
+174-;-Complete service configuration for {Arg_1}/{Arg_2}.-;-Complete la configuración de servicio para {Arg_1}/ {Arg_2}.
+175-;-Complete service auto configuration for {Arg_1}/{Arg_2}.-;-Completar la configuración automática de servicio para {Arg_1}/ {Arg_2}.
+176-;-Variable {Arg_1} is missing in the service configuration for {Arg_2}/{Arg_3}. It may cause agreement not formed if the business policy does not contain the setting for the missing variable.-;-La variable {Arg_1} falta en la configuración de servicio para {Arg_2}/ {Arg_3}. Puede que no se forme un acuerdo si la política de negocio no contiene el valor de la variable que falta.
+177-;-Error configuring service {Arg_1}. {Arg_2}-;-Error al configurar el servicio {Arg_1}. {Arg_2}
+178-;-Error changing service configstate {Arg_1}, error {Arg_2}-;-Error al cambiar el estado configstate de servicio {Arg_1}, error {Arg_2}
+179-;-Start changing service configuration state to {Arg_1} for {Arg_2} for the node.-;-Se inicia el cambio de estado de configuración de servicio en {Arg_1} para {Arg_2} para el nodo.
+180-;-Complete changing service configuration state to {Arg_1} for {Arg_2} for the node.-;-Complete el cambio de estado de configuración de servicio a {Arg_1} para {Arg_2} para el nodo.
+181-;-Error converting the selections into Selectors: {Err}-;-Error al convertir las selecciones en Selectores: {Err}
+182-;-The constraint expression: {Dconstraints} is type {Dconstraints_1}, but is expected to be an array of strings-;-La expresión de restricción: {Dconstraints} es de tipo {Dconstraints_1}, pero se espera que sea una matriz de series de caracteres
+183-;-unable to convert policy constraint {Remainder} into internal format, error {Err}-;-no se ha podido convertir la restricción de política {Remainder} en formato interno, error {Err}
+184-;-Logical operator {NextLogicalOperator} is not valid, expecting AND, OR, &&, ||-;-El operador lógico {NextLogicalOperator} no es válido, se esperaba AND, OR, &, | |
+185-;-found {Lenpieces} token(s), expecting 3 in an expression {Expression}, expected form is <property> == <value>-;-se han encontrado {Lenpieces} token (s), se esperaba 3 en una expresión {Expression}, el formato esperado es <property> == <value>
+186-;-found {Lenpieces} token(s), expecting 3 in an expression {Expression}, expected form is expression with 3 tokens: <property> <operator> <value> in constraint expression-;-se han encontrado {Lenpieces} señal (s), se esperaba 3 en una expresión {Expression}, el formato esperado es expresión con 3 señales: <property><operator><value> en la expresión de restricción
+187-;-Expression: {Expression} should contain valid comparison operator - wrong operator {Pieces1}. Allowed operators: {Lessthan}, {Greaterthan}, {Equalto}, {Doubleequalto}, {Lessthaneq}, {Greaterthaneq}, {Notequalto}, {Inoperator}-;-Expresión: {Expression} debe contener un operador de comparación válido-operador erróneo {Pieces1}. Operadores permitidos: {Lessthan}, {Greaterthan}, {Equalto}, {Doubleequalto}, {Lessthaneq}, {Greaterthaneq}, {Notequalto}, {Inoperator}
+188-;-Comparison operator: {CompOp} is not supported for numeric value: {Value}-;-Operador de comparación: {CompOp} no está soportado para el valor numérico: {Value}
+189-;-Comparison operator: {CompOp} is not supported for boolean value: {Value}-;-Operador de comparación: {CompOp} no está soportado para el valor booleano: {Value}
+190-;-Comparison operator: {CompOp} is not supported for string list value: {Value}-;-Operador de comparación: {CompOp} no está soportado para el valor de lista de cadenas de caracteres: {Value}
+191-;-Comparison operator: {CompOp} is not supported for string value: {Value}-;-Operador de comparación: {CompOp} no está soportado para el valor de serie: {Value}
+192-;-Comparison operator: {CompOp} is not supported for single version: {Value}-;-Operador de comparación: {CompOp} no está soportado para una sola versión: {Value}
+193-;-Comparison operator: {CompOp} is not supported for version expression: {Value}-;-Operador de comparación: {CompOp} no está soportado para la expresión de versión: {Value}
+194-;-Expression: {Expression} is not valid-;-Expresión: {Expression} no es válida
