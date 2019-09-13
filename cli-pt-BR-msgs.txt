@@ -1,0 +1,1007 @@
+1;failed to unmarshal json input file {JsonFilePath}: {Err};Falha ao desserializar o arquivo de entrada JSON {JsonFilePath}: {Err}
+2;Incorrect node policy format in file {JsonFilePath}: {Err};Formato de política do nó incorreto no arquivo {JsonFilePath}: {Err}
+3;No pattern or node policy is specified. Will proceeed with the existing node policy.;Nenhum padrão ou política de nó especificado. Continuaremos com a política de nó existente.
+4;Reading input file {InputFile}...;Lendo o arquivo de entrada {InputFile}...
+5;hzn cli is configured with exchange url {ExchUrlBase} from {ExchangeUrlLocation} and the horizon agent is configured with exchange url {AnaxExchUrlBase} from {ExchangeUrlLocationFromAnax}. hzn register will not work with mismatched exchange urls.;A CLI hzn está configurada com a URL do Exchange {ExchUrlBase} de {ExchangeUrlLocation} e o agente do Horizon está configurado com a URL do Exchange {AnaxExchUrlBase} de {ExchangeUrlLocationFromAnax}. O registro de hzn não funcionará com URLs incompatíveis do Exchange.
+6;Horizon Exchange base URL: {ExchUrlBase};URL base do Horizon Exchange: {ExchUrlBase}
+7;Failed to get proper response from the Horizon agent;Falha ao obter resposta adequada a partir do agente do Horizon
+8;Please specify the node id and token using -n flag or HZN_EXCHANGE_NODE_AUTH environment variable.;Especifique o ID do nó e o token usando a sinalização -n ou a variável de ambiente HZN_EXCHANGE_NODE_AUTH.
+9;Using node ID '{NodeId}' from the Horizon agent;Usando o ID do nó '{NodeId}' a partir do agente do Horizon
+10;could not create a random token;Não foi possível criar um token aleatório
+11;node '{Org}/{NodeId}' does not exist in the exchange with the specified token, and the -u flag was not specified to provide exchange user credentials to create/update it.;O nó '{Org}/{NodeId}' não existe no Exchange com o token especificado e a sinalização -u não foi especificada para fornecer credenciais do usuário do Exchange para criá-lo/atualizá-lo.
+12;Node {Org}/{NodeId} does not exist in the exchange with the specified token, creating/updating it...;O nó {Org}/{NodeId} não existe no Exchange com o token especificado, criando-o/atualizando-o...
+13;Node {Org}/{NodeId} exists in the exchange;O nó {Org}/{NodeId} existe no Exchange
+14;this Horizon node is already registered or in the process of being registered. If you want to register it differently, run 'hzn unregister' first.;Este nó do Horizon já está registrado ou no processo de registro. Se quiser registrá-lo de forma diferente, primeiro execute 'hzn unregister'.
+15;Registration failed because {Matches0} Please update the services section in the input file {InputFile}. Run 'hzn unregister' and then 'hzn register...' again;O registro falhou devido a {Matches0}. Atualize a seção de serviços no arquivo de entrada {InputFile}. Execute 'hzn unregister' e, em seguida, 'hzn register...' novamente
+16;{Errstring}. Please define variables for service {Matches2} in the input file {InputFile}. Run 'hzn unregister' and then 'hzn register...' again;{Errstring}. Defina variáveis para o serviço {Matches2} no arquivo de entrada {InputFile}. Execute 'hzn unregister' e, em seguida, 'hzn register...' novamente
+17;{Errstring}. Please create an input file, define variables for service {Matches2}. Run 'hzn unregister' and then 'hzn register...' again with the -f flag to specify the input file.;{Errstring}. Crie um arquivo de entrada e defina variáveis para o serviço {Matches2}. Execute 'hzn unregister' e, em seguida, 'hzn register...' novamente com a sinalização -f para especificar o arquivo de entrada.
+18;-o and -p are mutually exclusive with <nodeorg> and <pattern> arguments.;-o e -p são mutuamente exclusivos com os argumentos <nodeorg> e <pattern>.
+19;--policy is mutually exclusive with -p.;--policy é mutuamente exclusivo com -p.
+20;--policy is mutually exclusive with <pattern> argument.;--policy é mutuamente exclusivo com o argumento <pattern>.
+21;Please specify the node organization id.;Especifique o ID da organização do nó.
+22;invalid version range '{Vr}': {Err};Intervalo de versão inválido '{Vr}': {Err}
+23;unable to verify that {Version} is within {VRange}, error {Err};Não é possível verificar se {Version} está em {VRange}, erro {Err}
+24;found no services in the exchange matching: org={Org}, url={Url}, arch={Arch};Não foram localizados no Exchange serviços correspondentes a: org={Org}, url={Url}, arch={Arch}
+25;error comparing version {ServiceshighestKey} with version {Version}. {Err};Erro ao comparar a versão {ServiceshighestKey} com a versão {Version}. {Err}
+26;found no services in the exchange matched: org={Org}, specRef={Url}, version range={VersionRanges}, arch={Arch};Não foram localizados serviços no Exchange correspondentes a: org={Org}, specRef={Url}, versão range={VersionRanges}, arch={Arch}
+27;found: {Org}, {Url}, {Arch}, {VersionRange};Localizados: {Org}, {Url}, {Arch}, {VersionRange}
+28;did not find pattern '{PatKey}' as expected;O padrão '{PatKey}' não foi localizado conforme esperado
+29;Ignoring service that is a different architecture: {ServiceOrg}, {ServiceURL}, {ServiceArch};Ignorando o serviço que é uma arquitetura diferente: {ServiceOrg}, {ServiceURL}, {ServiceArch}
+30;failed to marshal the user input template file: {Err};Falha ao serializar o arquivo de modelo de entrada do usuário: {Err}
+31;problem writing the user input template file: {Err};Problema ao gravar o arquivo de modelo de entrada do usuário: {Err}
+32;Wrote {InputFile};Gravado {InputFile}
+33;Reading configuration file: {ConfigFile};Lendo o arquivo de configuração: {ConfigFile}
+34;Unable to read config file: {ConfigFile}. {Err};Não é possível ler o arquivo de configuração: {ConfigFile}. {Err}
+35;Unable to decode content of config file {ConfigFile}. {Err};Não é possível decodificar o conteúdo do arquivo de configuração {ConfigFile}. {Err}
+36;Config file does not exist: {ConfigFile}.;O arquivo de configuração não existe: {ConfigFile}.
+37;Failed to set the environment variable defined in the MetadataVars attribute in file {ConfigFile}. {Err};Falha ao configurar a variável de ambiente definida no atributo MetadataVars no arquivo {ConfigFile}. {Err}
+38;Failed to set the environment variable in top level in file {ConfigFile}. {Err};Falha ao configurar a variável de ambiente no nível superior no arquivo {ConfigFile}. {Err}
+39;Failed to set the environment variable defined in file {ConfigFile}. {Err};Falha ao configurar a variável de ambiente definida no arquivo {ConfigFile}. {Err}
+40;Local configuration {LocalConfigFile} has been setup at the beginning of this command. Will not setup twice.;A configuração local {LocalConfigFile} foi definida no início deste comando. A configuração não será feita novamente.
+41;Failed to set the environment variable from the local configuration file {LocalConfigFile} for file {FilePath}. Error: {Err};Falha ao configurar a variável de ambiente a partir do arquivo de configuração local {LocalConfigFile} para o arquivo {FilePath}. Erro: {Err}
+42;Failed to restore the environment variable after using local configuration file {UseLocalConfig}. {Err};Falha ao restaurar a variável de ambiente depois de usar o arquivo de configuração local {UseLocalConfig}. {Err}
+43;Failed to get the absolute path for file {ConfigFilepkg}. {Err};Falha ao obter o caminho absoluto para o arquivo {ConfigFilepkg}. {Err}
+44;Error reading environment variables from file {ConfigFilepkg}. {Err};Erro ao ler as variáveis de ambiente a partir do arquivo {ConfigFilepkg}. {Err}
+45;Error reading environment variables from file /etc/default/horizon. {Err};Erro ao ler as variáveis de ambiente a partir do arquivo /etc/default/horizon. {Err}
+46;Failed to get the absolute path for file ~/.hzn/hzn.json. {Err};Falha ao obter o caminho absoluto para o arquivo ~/.hzn/hzn.json. {Err}
+47;Error getting project level configuration file name. {Err};Erro ao obter o nome do arquivo de configuração no nível do projeto. {Err}
+48;No project level configuration file found.;Nenhum arquivo de configuração de nível de projeto localizado.
+49;failed to marshal 'hzn status -l' output: {Err};Falha ao serializar a saída de 'hzn status -l': {Err}
+50;failed to marshal 'hzn status' output: {Err};Falha ao serializar a saída de 'hzn status': {Err}
+51;Version_Expression: Whitespace is not permitted in {Expr}.;Version_Expression: não são permitidos espaços em branco em {Expr}.
+52;Version_Expression: {Verstring} is not a valid version string.;Version_Expression: {Verstring} não é uma sequência de versões válida.
+53;Version_Expression: {Verstring} does not begin with an inclusion or exclusion directive.;Version_Expression: {Verstring} não começa com uma diretiva de inclusão ou exclusão.
+54;Version_Expression: {Verstring} does not end with an inclusion or exclusion directive.;Version_Expression: {Verstring} não termina com uma diretiva de inclusão ou exclusão.
+55;Version_Expression: Incorrect number of versions in expression: {Expr}.;Version_Expression: número incorreto de versões na expressão: {Expr}.
+56;Input version string {V1} or {V2} is not a valid single version string.;A sequência de versões de entrada {V1} ou {V2} não é uma sequência de versões única válida.
+57;The selection string {V} is not valid.;A sequência de seleção {V} não é válida.
+58;failed to marshal 'hzn eventlog list' output: {Err};Falha ao serializar a saída de 'hzn eventlog list': {Err}
+59;Are you sure you want to unregister this Horizon node?;Tem certeza de que deseja cancelar o registro deste nó do Horizon?
+60;Horizon node delete call successful with return code: {Output};Chamada de exclusão do nó do Horizon bem-sucedida com o código de retorno: {Output}
+61;Timeout in {TotalWait} seconds ...;Tempo limite em {TotalWait} segundos...
+62;Waiting for Horizon node unregister to complete: {UpdateStatus};Aguardando a conclusão do cancelamento do registro do nó do Horizon: {UpdateStatus}
+63;No Timeout specified ...;Nenhum tempo limite especificado...
+64;Stopping horizon...;Parando o horizon...
+65;Node configuration state: {State};Estado de configuração do nó: {State}
+66;Timeout waiting for node change to 'unconfigured' state.;Tempo limite atingido ao aguardar a mudança do nó para o estado 'unconfigured'.
+67;unable to list containers, {Err};Não é possível listar contêineres, {Err}
+68;Error deleting container {Names0}. {Err};Erro ao excluir o contêiner {Names0}. {Err}
+69;Removed service container: {Names0};Contêiner de serviço removido: {Names0}
+70;Error pruning docker networks. {Err};Erro ao remover redes do Docker. {Err}
+71;New dependency created: {Target} .;Nova dependência criada: {Target} .
+72;'{DEPENDENCYCOMMAND} {DEPENDENCYLISTCOMMAND}' unable to create json object from dependencies, {Err};'{DEPENDENCYCOMMAND} {DEPENDENCYLISTCOMMAND}' não é possível criar objeto JSON a partir de dependências, {Err}
+73;Unable to set env var 'HZN_DONT_SUBST_ENV_VARS', error {Err};Não é possível configurar a variável de ambiente 'HZN_DONT_SUBST_ENV_VARS', erro {Err}
+74;Unable to restore env var 'HZN_DONT_SUBST_ENV_VARS', error {Err};Não é possível restaurar a variável de ambiente 'HZN_DONT_SUBST_ENV_VARS', erro {Err}
+75;unable to get list of dependency files in {DepPath}, error: {Err};Não é possível obter uma lista de arquivos de dependência em {DepPath}, erro: {Err}
+76;could not create dependency directory {NewDir}, error: {Err};Não foi possível criar o diretório de dependências {NewDir}, erro: {Err}
+77;dependency validation failed, unable to read {Name}, error: {Err};A validação de dependência falhou, não é possível ler {Name}, erro: {Err}
+78;dependency validation failed, dependency {Name} has an invalid version {Version}, error: {Err};A validação de dependência falhou, a dependência {Name} possui uma versão inválida {Version}, erro: {Err}
+79;dependency validation failed, unable to verify version range {Version} is within required range {Expression}, error: {Err};A validação de dependência falhou, não é possível verificar se o intervalo de versão {Version} está dentro do intervalo necessário {Expression}, erro: {Err}
+80;dependency {URL} at version {VersionRange} does not exist in {Joindirectory_DEFAULTDEPENDENCYDIR}.;A dependência {URL} na versão {VersionRange} não existe em {Joindirectory_DEFAULTDEPENDENCYDIR}.
+81;dependency {Name} did not validate, error: {Err};A dependência {Name} não foi validada, erro: {Err}
+82;variable {Name} has no default and must be specified in {UserInputsFilePath};A variável {Name} não possui um padrão e deve ser especificada em {UserInputsFilePath}
+83;--specRef is mutually exclusive with --url.;--specRef é mutuamente exclusivo com --url.
+84;--project is mutually exclusive with --specRef, --org and --url.;--project é mutuamente exclusivo com --specRef, --org e --url.
+85;one of --project, or --specRef and --org, or --url and --org must be specified.;Deve-se especificar uma das opções dentre --project ou --specRef e --org ou --url e --org.
+86;either --specRef and --org, or --url and --org must be specified.;Deve-se especificar --specRef e --org ou --url e --org.
+87;use --url with service projects.;Use --url com projetos de serviço.
+88;--project {Project} does not contain Horizon service metadata.;--project {Project} não contém metadados de serviço do Horizon.
+89;Reading Horizon metadata from {Dir};Lendo metadados do Horizon de {Dir}
+90;--specRef or --url is required for remove.;É necessário especificar --specRef ou --url para a remoção.
+91;--specRef and --url are mutually exclusive.;--specRef e --url são mutuamente exclusivos.
+92;Service project {Dir} verified.;Projeto de serviço {Dir} verificado.
+93;Unable to set env var 'HZN_DONT_SUBST_ENV_VARS' to zero, error {Err};Não é possível configurar a variável de ambiente 'HZN_DONT_SUBST_ENV_VARS' como zero, erro {Err}
+94;Failed to get the hzn.json configuration file under {Project} directory. Error: {Err};Falha ao colocar o arquivo de configuração hzn.json no diretório {Project}. Erro: {Err}
+95;Failed to set the environment variables from configuration file {Projconfigfile}. Error: {Err};Falha ao configurar as variáveis de ambiente a partir do arquivo de configuração {Projconfigfile}. Erro: {Err}
+96;Reading Horizon metadata from dependency: {AbsProject};Lendo metadados do Horizon a partir da dependência: {AbsProject}
+97;Found dependency {URL}, Org: {Org};Dependência localizada {URL}, Org: {Org}
+98;Failed to restore the environment variables. {Err};Falha ao restaurar variáveis de ambiente. {Err}
+99;Updated {HomeDirectory}/{USERINPUTFILE} with the dependency's variable and global attribute configuration.;{HomeDirectory}/{USERINPUTFILE} atualizado com a variável de dependência e a configuração do atributo global.
+100;To ensure that the dependency operates correctly, please add variable values to the userinput.json file if this service needs any.;Para assegurar-se de que a dependência opere corretamente, inclua valores de variáveis no arquivo userinput.json, caso seja necessário para este serviço.
+101;The current project already has userinputs defined for this dependency.;O projeto atual já possui entradas do usuário definidas para esta dependência.
+102;Updated {HomeDirectory}/{USERINPUTFILE} with the dependency's variable configuration.;{HomeDirectory}/{USERINPUTFILE} atualizado com a configuração de variável da dependência.
+103;unsupported project type;Tipo de projeto não suportado
+104;Created {FilePath}/{FileName} as a new dependency.;{FilePath}/{FileName} criado como uma nova dependência.
+105;unable to find highest version of {Surl} {Org} in the exchange: {Services};Não foi possível localizar a versão mais alta de {Surl} {Org} no Exchange: {Services}
+106;no services found in the exchange.;Nenhum serviço localizado no Exchange.
+107;Creating dependency on: {ServiceDef}, Org: {Org};Criando dependência em: {ServiceDef}, Org: {Org}
+108;failed to unmarshal deployment {Deployment}: {Err};Falha ao desserializar a implementação {Deployment}: {Err}
+109;The image docker auths for the service {Org}/{Surl} are: {Imgauths};As autorizações de imagem do Docker para o serviço {Org}/{Surl} são: {Imgauths}
+110;failed to get images for {Org}/{Surl}: {Err};Falha ao obter imagens para {Org}/{Surl}: {Err}
+111;Unable to get dependency info for {Sp} , error {Err};Não é possível obter informações de dependência para {Sp}, erro {Err}
+112;'dependency {DEPENDENCYREMOVECOMMAND}' failed to get a list of dependecies. Error {Err};'dependency {DEPENDENCYREMOVECOMMAND}' falhou ao obter uma lista de dependências. Erro {Err}
+113;All dependencies are: {Deps};Todas as dependências são: {Deps}
+114;Found dependency: {Name};Dependência localizada: {Name}
+115;Will not remove dependency {Name} because it is referenced by other services.;A dependência {Name} não será removida porque é referenciada por outros serviços.
+116;'dependency {DEPENDENCYREMOVECOMMAND}' dependency not found.;Dependência 'dependency {DEPENDENCYREMOVECOMMAND}' não localizada.
+117;Could not read the dependency file {Name}. Error: {Err};Não foi possível ler o arquivo de dependência {Name}. Erro: {Err}
+118;Error updating project definition: {Err};Erro ao atualizar a definição de projeto: {Err}
+119;Dependency {Name} could not be removed. Error: {Err};A dependência {Name} não pôde ser removida. Erro: {Err}
+120;Error updating userinputs: {Err};Erro ao atualizar entradas do usuário: {Err}
+121;Removed dependency {Arch}.;Dependência removida {Arch}.
+122;Removed dependency's dependency {Arch}.;Removida a dependência {Arch} da dependência.
+123;error creating {DOCKERFILE} for service image. {Err};Erro ao criar {DOCKERFILE} para a imagem de serviço. {Err}
+124;Edge $SERVICE_NAME Service Pattern for $ARCH;Padrão de serviço de ponta $SERVICE_NAME para $ARCH
+125;Pattern for $SERVICE_NAME for $ARCH;Padrão para $SERVICE_NAME para $ARCH
+126;Edge $SERVICE_NAME Service Pattern for all architectures;Padrão de serviço de ponta $SERVICE_NAME para todas as arquiteturas
+127;Pattern for $SERVICE_NAME;Padrão para $SERVICE_NAME
+128;'{SERVICECOMMAND} {SERVICECREATIONCOMMAND}' Failed to get the service name from the image name. {Err};'{SERVICECOMMAND} {SERVICECREATIONCOMMAND}' falhou ao obter o nome do serviço a partir do nome da imagem. {Err}
+129;Creating config file for environmental variables: {Dir}/{HZNENVFILE};Criando arquivo de configuração para variáveis de ambiente: {Dir}/{HZNENVFILE}
+130;Creating user input file: {Dir}/{USERINPUTFILE};Criando arquivo de entrada do usuário: {Dir}/{USERINPUTFILE}
+131;Creating service definition file: {Dir}/{SERVICEDEFINITIONFILE};Criando arquivo de definição de serviço: {Dir}/{SERVICEDEFINITIONFILE}
+132;Creating pattern definition file: {Dir}/{PATTERNDEFINITIONFILE};Criando arquivo de definição de padrão: {Dir}/{PATTERNDEFINITIONFILE}
+133;Creating service policy file: {Dir}/{SERVICEPOLICYFILE};Criando arquivo de política de serviço: {Dir}/{SERVICEPOLICYFILE}
+134;Creating .gitignore files for source code management.;Criando arquivo .gitignore para gerenciamento de código de origem.
+135;Creating image generation files under {Currentdir} directory.;Criando arquivos de geração de imagem no diretório {Currentdir}.
+136;Created image generation files in {Currentdir} and horizon metadata files in {Dir}. Edit these files to define and configure your new {SERVICECOMMAND}.;Criados arquivos de geração de imagem em {Currentdir} e arquivos de metadados do Horizon em {Dir}. Edite esses arquivos para definir e configurar seu novo {SERVICECOMMAND}.
+137;Created horizon metadata files in {Dir}. Edit these files to define and configure your new {SERVICECOMMAND}.;Arquivos de metadados do Horizon criados em {Dir}. Edite esses arquivos para definir e configurar seu novo {SERVICECOMMAND}.
+138;must specify either --org or set the {DEVTOOLHZNORG} environment variable.;Deve-se especificar --org ou configurar a variável de ambiente {DEVTOOLHZNORG}.
+139;invalid version string: {Version};Sequência de versões inválida: {Version}
+140;only support one image for a service unless --noImageGen flag is specified.;Suportar apenas uma imagem para um serviço, a menos que a sinalização --noImageGen seja especificada.
+141;image {Image} has invalid format.;A imagem {Image} possui um formato inválido.
+142;please specify the image name with -i flag.;Especifique o nome da imagem com a sinalização -i.
+143;unsupported deployment config type: {Dconfig};Tipo de configuração de implementação não suportado: {Dconfig}
+144;$SERVICE_NAME for $ARCH;$SERVICE_NAME para $ARCH
+145;Who to say hello to;Who to say hello to
+146;unknown deployment type: {DeploymentType};Tipo de implementação desconhecido: {DeploymentType}
+147;{FilePath}: URL must be set.;{FilePath}: a URL deve ser configurada.
+148;{FilePath}: version must be set to a specific version, e.g. 1.0.0.;{FilePath}: a versão deve ser configurada como uma versão específica, por exemplo, 1.0.0.
+149;{FilePath}: org must be set.;{FilePath}: org deve ser configurado.
+150;{FilePath}: deployment configuration, {Err};{FilePath}: configuração de implementação, {Err}
+151;{FilePath}: userInput array index {Ix} does not have name and type specified.;{FilePath}: o índice de matriz de userInput {Ix} não tem nome e tipo especificados.
+152;Updated {HomeDirectory}/{SERVICEDEFINITIONFILE} dependencies.;Dependências {HomeDirectory}/{SERVICEDEFINITIONFILE} atualizadas.
+153;No need to update {HomeDirectory}/{SERVICEDEFINITIONFILE} dependencies.;Não é necessário atualizar dependências {HomeDirectory}/{SERVICEDEFINITIONFILE}.
+154;error creating {HORIZONGITIGNOREFILE} for source code management. {Err};Erro ao criar {HORIZONGITIGNOREFILE} para o gerenciamento de código de origem. {Err}
+155;unable to demarshal {UserInputFilePath} file, error: {Err};Não é possível desserializar o arquivo {UserInputFilePath}, erro: {Err}
+156;Converted userinput attribute: {GlobalSet} to API attribute: {Attr};Atributo de entrada do usuário: {GlobalSet} convertido para o atributo de API: {Attr}
+157;{GlobalSet} encountered error: {Error};{GlobalSet} encontrou um erro: {Error}
+158;Converted API Attributes: {Global} to persistent attributes: {Attributes};Atributos de API: {Global} convertidos em atributos persistentes: {Attributes}
+159;{OriginalUserInputFilePath}: global array element ({GlobalSet}) has an empty type, must be one of the supported attribute types. See the Horizon agent /attribute API.;{OriginalUserInputFilePath}: o elemento de matriz global ({GlobalSet}) possui um tipo vazio; ele deve ser um dos tipos de atributo suportados. Consulte a API do agente/atributo do Horizon.
+160;{USERINPUTFILE} has error: {Err};{USERINPUTFILE} possui um erro: {Err}
+161;{OriginalUserInputFilePath}: services array element at index {Ix} is {MicroWork} {Err};{OriginalUserInputFilePath}: o elemento da matriz de serviços no índice {Ix} é {MicroWork} {Err}
+162;{OriginalUserInputFilePath}: services array does not contain an element for {URL}. Error: {Err};{OriginalUserInputFilePath}: a matriz de serviços não contém um elemento para {URL}. Erro: {Err}
+163;please provice a user input file for service {URL}. Error: {Err};Forneça um arquivo de entrada do usuário para o serviço {URL}. Erro: {Err}
+164;has empty org, must be set to the name of the organization that owns the service.;org está vazia e deve ser configurada como o nome da organização proprietária do serviço.
+165;has empty url. Must be set to this service's url or a dependency's url.;Possui uma URL vazia. Ela deve ser configurada como a URL deste serviço ou como uma URL de dependência.
+166;sets variable {VarName} using a value of {Err}.;Configura a variável {VarName} usando um valor de {Err}.
+167;sets variable {VarName} of type {VarValue} that is not defined.;Configura a variável {VarName} do tipo {VarValue} que não está definida.
+168;Updated {HomeDirectory}/{USERINPUTFILE}.;{HomeDirectory}/{USERINPUTFILE} atualizado.
+169;No need to update {HomeDirectory}/{USERINPUTFILE}.;Não é necessário atualizar {HomeDirectory}/{USERINPUTFILE}.
+170;could not create directory {NewDepDir}, error: {Err};Não foi possível criar o diretório {NewDepDir}, erro: {Err}
+171;could not get status of directory {NewDepDir}, error: {Err};Não foi possível obter o status do diretório {NewDepDir}, erro: {Err}
+172;Using working directory: {Dir};Utilizando o diretório ativo: {Dir}
+173;horizon project in {Dir} already contains {FileName}.;O projeto do Horizon em {Dir} já contém {FileName}.
+174;error checking for {FileName}: {Err};Erro ao verificar {FileName}: {Err}
+175;failed to unmarshal {FilePath}, error: {Err};Falha ao desserializar {FilePath}, erro: {Err}
+176;failed to create json object for {FileName}, error: {Err};Falha ao criar o objeto JSON para {FileName}, erro: {Err}
+177;unable to write json object for {FileName} to file {FilePath}, error: {Err};Não é possível gravar o objeto JSON para {FileName} no arquivo {FilePath}, erro: {Err}
+178;Must set environment variable {DEVTOOLHZNORG} or specify the user as 'org/user' on the --user-pw flag;Deve-se configurar a variável de ambiente {DEVTOOLHZNORG} ou especificar o usuário como 'org/user' na sinalização --user-pw
+179;Must set environment variable {DEVTOOLHZNUSER} or specify user exchange credentials with --user-pw;Deve-se configurar a variável de ambiente {DEVTOOLHZNUSER} ou especificar credenciais do usuário do Exchange com --user-pw
+180;Unable to set env var {DEVTOOLHZNEXCHANGEURL} to {ExchangeUrl}, error {Err};Não é possível configurar a variável de ambiente {DEVTOOLHZNEXCHANGEURL} como {ExchangeUrl}, erro {Err}
+181;Environment variable {DEVTOOLHZNEXCHANGEURL} must be set.;A variável de ambiente {DEVTOOLHZNEXCHANGEURL} deve ser configurada.
+182;project has no horizon metadata directory. Use hzn dev to create a new project. Error: {Err};O projeto não possui um diretório de metadados do Horizon. Use hzn dev para criar um novo projeto. Erro: {Err}
+183;'{ProjectType} {Cmd}' project does not validate. {Derr};O projeto '{ProjectType} {Cmd}' não é validado. {Derr}
+184;'{ProjectType} {Cmd}' project does not validate. {Verr};O projeto '{ProjectType} {Cmd}' não é validado. {Verr}
+185;'{ProjectType} {Cmd}' Must specify configuration file type (-t) when a configuration file is specified (-m).;'{ProjectType} {Cmd}' deve especificar o tipo de arquivo de configuração (-t) quando um arquivo de configuração for especificado (-m).
+186;'{ProjectType} {Cmd}' configuration file {FileRef} error {Err};'{ProjectType} {Cmd}' arquivo de configuração {FileRef} erro {Err}
+187;project does not validate. {Verr};O projeto não é validado. {Verr}
+188;project in {Dir} is not a horizon project.;O projeto em {Dir} não é um projeto do Horizon.
+189;Final Attributes: {Attrs};Atributos finais: {Attrs}
+190;global attribute conversion error: {Cerr};Erro de conversão de atributo global: {Cerr}
+191;'{ProjectType} {Cmd}' unable to create Container Worker, {Cerr};'{ProjectType} {Cmd}' é incapaz de criar o Trabalhador do contêiner, {Cerr}
+192;unable to list existing containers: {Err};Não é possível listar os contêineres existentes: {Err}
+193;Found main network for service {Nwname}, {ContainerNetwork};Rede principal localizada para o serviço {Nwname}, {ContainerNetwork}
+194;'{SERVICECOMMAND} {SERVICESTARTCOMMAND}' {StartErr} for dependency {URL};'{SERVICECOMMAND} {SERVICESTARTCOMMAND}' {StartErr} para a dependência {URL}
+195;unable to retrieve dependency metadata: {Err};Não é possível recuperar metadados de dependência: {Err}
+196;unable to start dependencies: {Err};Não é possível iniciar dependências: {Err}
+197;Skipping service because it has no deployment configuration: {DepConfig};Ignorando o serviço porque não possui configuração de implementação: {DepConfig}
+198;unable to generate instance ID: {Err};Não é possível gerar o ID da instância: {Err}
+199;unable to create environment variables;Não é possível criar variáveis de ambiente
+200;Passing environment variables: {EnvironmentAdditions};Transmitindo variáveis de ambiente: {EnvironmentAdditions}
+201;Start {LogName}: {CLIString} with instance id prefix {Id};Iniciar {LogName}: {CLIString} com o prefixo de ID da instância {Id}
+202;unable to start container using {CLIString}, error: {StartErr};Não é possível iniciar o contêiner utilizando {CLIString}, erro: {StartErr}
+203;Running {LogName}.;Executando {LogName}.
+204;Stopping dependencies.;Parando dependências.
+205;unable to stop dependencies: {Err};Não é possível parar dependências: {Err}
+206;Found containers {Containers};Contêineres localizados {Containers}
+207;Stop {LogName}: {CLIString} with instance id prefix {MsId};Parar {LogName}: {CLIString} com o prefixo de ID da instância {MsId}
+208;failed to create docker client, error: {Derr};Falha ao criar o cliente do Docker, erro: {Derr}
+209;failed to convert global attributes in {USERINPUTFILE}, error: {Err};Falha ao converter atributos globais em {USERINPUTFILE}, erro: {Err}
+210;failed to extract authentication attribute from {USERINPUTFILE}, error: {Err};Falha ao extrair atributo de autenticação de {USERINPUTFILE}, erro: {Err}
+211;getting container images into docker.;Colocando imagens do contêiner no Docker.
+212;failed to get container images, error: {Err};Falha ao obter imagens do contêiner, erro: {Err}
+213;invalid image format: {Image};Formato de imagem inválido: {Image}
+214;file {FilePath} exists already;O arquivo {FilePath} já existe
+215;unable to write content to file {FilePath}, error: {Err};Não é possível gravar conteúdo no arquivo {FilePath}, erro: {Err}
+216;horizon api agreement output did not include 'agreements' key;A saída do contrato de API do Horizon não incluía a chave 'agreements'
+217;horizon api agreement output did not include '{WhichAgreements}' key;A saída do contrato de API do Horizon não incluía a chave '{WhichAgreements}'
+218;failed to marshal 'hzn metering list' output: {Err};Falha ao serializar a saída 'hzn metering list': {Err}
+219;unable to set env var 'HORIZON_URL', error {Err};Não é possível configurar a variável de ambiente 'HORIZON_URL', erro {Err}
+220;failed to marshal 'agreement list' output: {Err};Falha ao serializar a saída 'agreement list': {Err}
+221;either an agreement ID or -a must be specified.;Deve-se especificar um ID de contrato ou -a.
+222;Canceling agreement {Id} ...;Cancelando o contrato {Id} ...
+223;failed to marshal 'hzn node list' output: {Err};Falha ao serializar a saída 'hzn node list': {Err}
+224;failed to marshal 'policy list' output: {Err};Falha ao serializar a saída 'policy list': {Err}
+225;Error: The organization '{Org}' does not exist.;Erro: a organização '{Org}' não existe.
+226;Error: Either the organization '{Org}' does not exist or the policy '{Name}' is not hosted by this agbot.;Erro: a organização '{Org}' não existe ou a política '{Name}' não é hospedada por este agbot.
+227;failed to marshal 'exchange agbot list' output: {Err};Falha ao serializar a saída 'exchange agbot list': {Err}
+228;agbot '{Agbot}' not found in org {AgbotOrg};agbot '{Agbot}' não localizado na organização {AgbotOrg}
+229;both patternorg and pattern must be specified (or neither);Deve-se especificar patternorg e o padrão (ou nenhum deles)
+230;pattern '{Pattern}' with org '{PatternOrg}' and node org '{NodeOrg}' not found in agbot '{Agbot}';Padrão '{Pattern}' com a organização '{PatternOrg}' e a organização de nó '{NodeOrg}' não localizados no agbot '{Agbot}'
+231;Pattern '{Pattern}' with org '{PatternOrg}' and node org '{NodeOrg}' already exists in agbot '{Agbot}';O padrão '{Pattern}' com a organização '{PatternOrg}' e a organização de nó '{NodeOrg}' já existem no agbot '{Agbot}'
+232;Adding Business policy org {PolOrg}' to agbot '{Agbot}'. The agbot will start looking for nodes that are compatible with this policy.;Incluindo a organização da política de negócio {PolOrg}' no agbot '{Agbot}'. O agbot começará a procurar por nós compatíveis com esta política.
+233;Business policy org {PolOrg}' already exists in agbot '{Agbot}';A organização da política de negócio {PolOrg}' já existe no agbot '{Agbot}'
+234;Removing Business policy org {PolOrg}' to agbot '{Agbot}'. The agbot is no longer looking for nodes that are compatible with this policy.;Removendo a organização da política de negócio {PolOrg}' do agbot '{Agbot}'. O agbot não está mais procurando por nós compatíveis com esta política.
+235;Policy {Policy} not found in org {PolOrg};Política {Policy} não localizada na organização {PolOrg}
+236;failed to marshal 'hzn exchange business listpolicy' output: {Err};Falha ao serializar a saída 'hzn exchange business listpolicy': {Err}
+237;Incorrect business policy format in file {JsonFilePath}: {Err};Formato da política de negócio incorreto no arquivo {JsonFilePath}: {Err}
+238;Business policy: {PolOrg}/{Policy} updated in the Horizon Exchange;Política de negócios: {PolOrg}/{Policy} atualizada no Horizon Exchange
+239;Business policy: {PolOrg}/{Policy} added in the Horizon Exchange;Política de negócios: {PolOrg}/{Policy} incluída no Horizon Exchange
+240;failed to unmarshal attribute input {Attribute}: {Err};Falha ao desserializar a entrada do atributo {Attribute}: {Err}
+241;Updating Policy {PolOrg}/{PolicyName} in the Horizon Exchange and re-evaluating all agreements based on this Business policy. Existing agreements might be cancelled and re-negotiated.;Atualizando a política {PolOrg}/{PolicyName} no Horizon Exchange e reavaliando todos os contratos baseados nesta política de negócio. Os contratos existentes podem ser cancelados e renegociados.
+242;Policy {PolOrg}/{PolicyName} updated in the Horizon Exchange;Política {PolOrg}/{PolicyName} atualizada no Horizon Exchange
+243;Invalid format for properties: {Err};Formato inválido para propriedades: {Err}
+244;Invalid format for constraints: {Err};Formato inválido para restrições: {Err}
+245;Business policy attribute to be updated is not found in the input file. Supported attributes are: label, description, service, properties, constraints, and userInput.;O atributo de política de negócio a ser atualizado não foi encontrado no arquivo de entrada. Os atributos suportados são: label, description, service, properties, constraints e userInput.
+246;Are you sure you want to remove business policy {Policy} for org {PolOrg} from the Horizon Exchange?;Tem certeza de que deseja remover a política de negócio {Policy} da organização {PolOrg} do Horizon Exchange?
+247;Policy {PolOrg}/{Policy} not found in the Horizon Exchange;Política {PolOrg}/{Policy} não localizada no Horizon Exchange
+248;Removing Business policy {PolOrg}/{Policy} and re-evaluating all agreements based on just the built-in node policy. Existing agreements might be cancelled and re-negotiated;Removendo a política de negócio {PolOrg}/{Policy} e reavaliando todos os contratos baseados apenas na política do nó integrado. Os contratos existentes podem ser cancelados e renegociados
+249;Business policy {PolOrg}/{Policy} removed;Política de negócio {PolOrg}/{Policy} removida
+250;Business policy label.;Rótulo da política de negócio.
+251;Business policy description.;Descrição da política de negócio.
+252;The name of the service.;O nome do serviço.
+253;The org of the service.;A organização do serviço.
+254;Set to '*' to use services of any hardware architecture.;Configure como '*' para usar serviços de qualquer arquitetura de hardware.
+255;A list of service versions.;Uma lista de versões de serviço.
+256;A list of policy properties that describe the service being deployed.;Uma lista de propriedades de política que descrevem o serviço que está sendo utilizado.
+257;A list of constraint expressions of the form <property name> <operator> <property value>,;Uma lista de expressões de restrição no formato <property name> <operator> <property value>,
+258;separated by boolean operators AND (&&) or OR (||).;separados pelos operadores booleanos AND (&&) ou OR (||).
+259;A list of userInput variables to set when the service runs, listed by service.;Uma lista de variáveis userInput a serem configuradas quando o serviço for executado, listadas por serviço.
+260;The service version range to which these variables should be applied.;O intervalo de versões de serviço para o qual essas variáveis devem ser aplicadas.
+261;The input variables to be set.;As variáveis de entrada a serem configuradas.
+262;Flags -s and -l are mutually exclusive.;As sinalizações -s e -l são mutuamente exclusivas.
+263;failed to marshal 'hzn exchange catalog servicelist -l' output: {Err};Falha ao serializar a saída 'hzn exchange catalog servicelist -l': {Err}
+264;failed to marshal 'hzn exchange catalog servicelist -s' output: {Err};Falha ao serializar a saída 'hzn exchange catalog servicelist -s': {Err}
+265;failed to marshal 'hzn exchange catalog servicelist' output: {Err};Falha ao serializar a saída 'hzn exchange catalog servicelist': {Err}
+266;failed to marshal 'hzn exchange catalog patternlist -l' output: {Err};Falha ao serializar a saída 'hzn exchange catalog patternlist -l': {Err}
+267;failed to marshal 'hzn exchange catalog patternlist -s' output: {Err};Falha ao serializar a saída 'hzn exchange catalog patternlist -s': {Err}
+268;failed to marshal 'hzn exchange catalog patternlist' output: {Err};Falha ao serializar a saída 'hzn exchange catalog patternlist': {Err}
+269;no service name;Nenhum nome de serviço
+270;no docker image for service {ServiceName};Nenhuma imagem do Docker para o serviço {ServiceName}
+271;failed to marshal body for {D}: {Err};Falha ao serializar o corpo para {D}: {Err}
+272;failed to unmarshal json for deployment field {StringjsonBytes}: {Err};Falha ao desserializar o JSON para o campo de implementação {StringjsonBytes}: {Err}
+273;failed to marshal 'exchange node list' output: {Err};Falha ao serializar a saída 'exchange node list': {Err}
+274;node '{Node}' not found in org {NodeOrg};Nó '{Node}' não localizado na organização {NodeOrg}
+275;if node or token are specified then they both must be specified;Se nó ou token forem especificados, ambos devem ser especificados
+276;do not specify both the -n flag and the node and token positional arguments. They mean the same thing.;Não especifique a sinalização -n e o nó e argumentos posicionais do token. Eles têm o mesmo significado.
+277;either the node and token positional arguments, or the -n flag must be specified.;Deve-se especificar o nó e os argumentos posicionais do token ou a sinalização -n.
+278;User {Org}/{User} does not exist in the exchange with the specified password, creating it...;O usuário {Org}/{User} não existe no Exchange com a senha especificada, criando-o...
+279;user '{Org}/{User}' does not exist with the specified password or -e was not specified to be able to create it in the 'public' org.;O usuário '{Org}/{User}' não existe com a senha especificada ou -e não foi especificado para poder criá-lo na organização 'public'.
+280;key '{OrgAndCredsorg_nodeId}' not found in exchange nodes output;Chave '{OrgAndCredsorg_nodeId}' não localizada na saída de nós do Exchange
+281;can not update existing node {NodeId} because it is owned by another user ({Owner});Não é possível atualizar o nó existente {NodeId} porque ele pertence a outro usuário ({Owner})
+282;Node {NodeOrg}/{Node} not found in the Horizon Exchange.;Nó {NodeOrg}/{Node} não localizado no Horizon Exchange.
+283;Node {Node} updated in the Horizon Exchange.;Nó {Node} atualizado no Horizon Exchange.
+284;-n is mutually exclusive with <node> and <token> arguments.;-n é mutuamente exclusivo com os argumentos <node> e <token>.
+285;Please specify both node and token.;Especifique o nó e o token.
+286;Are you sure you want to remove node {NodeOrg}/{Node} from the Horizon Exchange (should not be done while an edge node is registered with this node id)?;Tem certeza de que deseja remover o nó {NodeOrg}/{Node} do Horizon Exchange (não deve ser feito enquanto um nó de ponta estiver registrado com este ID de nó)?
+287;node '{NodeOrg}/{Node}' not found.;Nó '{NodeOrg}/{Node}' não localizado.
+288;Incorrect policy format in file {JsonFilePath}: {Err};Formato de política incorreto no arquivo {JsonFilePath}: {Err}
+289;Node policy not found for node {NodeOrg}/{Node};Política de nó não localizada para o nó {NodeOrg}/{Node}
+290;Invalid property list {Attribute}: {Err};Lista de propriedades inválida {Attribute}: {Err}
+291;Updating Node {Node} policy properties in the horizon exchange and re-evaluating all agreements based on this policy. Existing agreements might be cancelled and re-negotiated.;Atualizando as propriedades de política do nó {Node} no Horizon Exchange e reavaliando todos os contratos baseados nesta política. Os contratos existentes podem ser cancelados e renegociados.
+292;Node {Node} policy properties updated in the horizon exchange.;Propriedades de política do nó {Node} atualizadas no Horizon Exchange.
+293;Invalid constraint expression {Attribute}: {Err};Expressão de restrição inválida {Attribute}: {Err}
+294;Updating Node {Node} policy constraints in the horizon exchange and re-evaluating all agreements based on this policy. Existing agreements might be cancelled and re-negotiated.;Atualizando as restrições de política do nó {Node} no Horizon Exchange e reavaliando todos os contratos baseados nesta política. Os contratos existentes podem ser cancelados e renegociados.
+295;Node {Node} policy constraints updated in the horizon exchange.;Restrições de política do nó {Node} atualizadas no Horizon Exchange.
+296;Failed to find valid attribute to update in input {Attribute}. Attributes are constraints and properties.;Falha ao localizar um atributo válido a ser atualizado na entrada {Attribute}. Os atributos são restrições e propriedades.
+297;Are you sure you want to remove node policy for {NodeOrg}/{Node} from the Horizon Exchange?;Tem certeza de que deseja remover a política de nó para {NodeOrg}/{Node} do Horizon Exchange?
+298;Removing Node policy and re-evaluating all agreements based on just the built-in node policy. Existing agreements might be cancelled and re-negotiated.;Removendo a política de nó e reavaliando todos os contratos baseados apenas na política do nó integrado. Os contratos existentes podem ser cancelados e renegociados.
+299;failed to marshal 'exchange pattern list' output: {Err};Falha ao serializar a saída 'exchange pattern list': {Err}
+300;pattern '{Pattern}' not found in org {PatOrg};Padrão '{Pattern}' não localizado na organização {PatOrg}
+301;failed to marshal 'hzn exchange pattern list' output: {Err};Falha ao serializar a saída 'hzn exchange pattern list': {Err}
+302;Pattern {Pattern}/{PatOrg} updated in the Horizon exchange.;Padrão {Pattern}/{PatOrg} atualizado no Horizon Exchange.
+303;failed to unmarshal json for deployment overrides field {StringjsonBytes}: {Err};Falha ao desserializar o JSON para o campo de substituições de implementação {StringjsonBytes}: {Err}
+304;the org specified in the input file ({Org}) must match the org specified on the command line ({Org_1});A organização especificada no arquivo de entrada ({Org}) deve corresponder à organização especificada na linha de comandos ({Org_1})
+305;the pattern definition ({Services}) must contain services, unable to proceed;A definição de padrão ({Services}) deve conter serviços, não é possível continuar
+306;Signing deployment_overrides field in service {I__1}, serviceVersion number {J__1};Assinando o campo deployment_overrides no serviço {I__1}, serviceVersion número {J__1}
+307;failed to marshal deployment_overrides field in service {I__1}, serviceVersion number {J__1}: {Err};Falha ao serializar o campo deployment_overrides no serviço {I__1}, serviceVersion número {J__1}: {Err}
+308;problem signing the deployment_overrides string with {KeyFilePath}: {Err};Problema ao assinar a sequência deployment_overrides com {KeyFilePath}: {Err}
+309;Updating {ExchId} in the exchange...;Atualizando o {ExchId} no Exchange...
+310;Creating {ExchId} in the exchange...;Criando {ExchId} no Exchange...
+311;Storing {BaseName} with the pattern in the exchange...;Armazenando {BaseName} com o padrão no Exchange...
+312;key '{Org____pattern}' not found in resources returned from exchange;Chave '{Org____pattern}' não localizada nos recursos retornados do Exchange
+313;verifying deployment_overrides string in service {I__1}, serviceVersion number {J__1};Verificando a sequência deployment_overrides no serviço {I__1}, serviceVersion número {J__1}
+314;problem verifying deployment_overrides string in service {I__1}, serviceVersion number {J__1} with {KeyFilePath}: {Err};Problema ao verificar a sequência deployment_overrides no serviço {I__1}, serviceVersion número {J__1} com {KeyFilePath}: {Err}
+315;Deployment_overrides string in service {I__1}, serviceVersion number {J__1} was not signed with the private key associated with this public key {KeyFilePath}.;A sequência Deployment_overrides no serviço {I__1}, no serviceVersion número {J__1} não foi assinada com a chave privada associada a esta chave pública {KeyFilePath}.
+316;Are you sure you want to remove pattern {Org}/{Pattern} from the Horizon Exchange?;Tem certeza de que deseja remover o padrão {Org}/{Pattern} do Horizon Exchange?
+317;key '{KeyName}' not found;Chave '{KeyName}' não localizada
+318;user input {Name} has no default value and is not set;A entrada do usuário {Name} não possui valor padrão e não está configurada
+319;failed to marshal 'hzn exchange service list' output: {Err};Falha ao serializar a saída 'hzn exchange service list': {Err}
+320;service '{Service}' not found in org {SvcOrg};Serviço '{Service}' não localizado na organização {SvcOrg}
+321;Flags -I and -P are mutually exclusive.;As sinalizações -I e -P são mutuamente exclusivas.
+322;Adding service policy for service: {ServiceAddPolicyService};Incluindo política de serviço para o serviço: {ServiceAddPolicyService}
+323;Service policy added for service: {ServiceAddPolicyService};Política de serviço incluída para o serviço: {ServiceAddPolicyService}
+324;the 'deploymentSignature' field is non-blank, but being ignored, because the 'deployment' field is null;O campo 'deploymentSignature' não está em branco, mas será ignorado porque o campo 'deployment' é nulo
+325;unable to sign deployment config: {Err};Não é possível assinar a configuração de implementação: {Err}
+326;the 'deployment' field is a non-empty string, which implies this service is pre-signed, but the 'deploymentSignature' field is empty;O campo 'deployment' é uma sequência não vazia, o que significa que esse serviço é pré-assinado, mas o campo 'deploymentSignature' está vazio
+327;'deployment' field is invalid type. It must be either a json object or a string (for pre-signed);O campo 'deployment' é de tipo inválido. Ele deve ser um objeto JSON ou uma sequência (para pré-assinados)
+328;Service {Org}/{ExchId} exists in the exchange, do you want to overwrite it?;O serviço {Org}/{ExchId} existe no Exchange, deseja sobrescrevê-lo?
+329;Storing {BaseName} with the service in the exchange...;Armazenando {BaseName} com o serviço no Exchange...
+330;Error: registry-token value of '{RegTok}' is not in the required format: registry:user:token. Not storing that in the Horizon exchange.;Erro: o valor do token de registro '{RegTok}' não está no formato necessário: registry:user:token. Ele não será armazenado no Horizon Exchange.
+331;unable to get container images from deployment: {Err};Não é possível obter imagens do contêiner a partir da implementação: {Err}
+332;problem verifying deployment string with {PubKeyFilePath}: {Err};Problema ao verificar a sequência de implementação com {PubKeyFilePath}: {Err}
+333;Deployment string was not signed with the private key associated with this public key {KeyFilePath}.;A sequência de implementação não foi assinada com a chave privada associada a esta chave pública {KeyFilePath}.
+334;Are you sure you want to remove service {Svcorg}/{Service} from the Horizon Exchange?;Tem certeza de que deseja remover o serviço {Svcorg}/{Service} do Horizon Exchange?
+335;keys not found;Chaves não localizadas
+336;docker auth {AuthId} not found;Autorização do Docker {AuthId} não localizada
+337;docker auths not found;Autorizações do Docker não localizadas
+338;service '{Svcorg}/{Service}' not found.;Serviço '{Svcorg}/{Service}' não localizado.
+339;failed to marshal 'hzn exchange service listpolicy' output: {Err};Falha ao serializar a saída 'hzn exchange service listpolicy': {Err}
+340;Updating Service policy  and re-evaluating all agreements based on this Service policy. Existing agreements might be cancelled and re-negotiated.;Atualizando a política de serviço e reavaliando todos os contratos baseados na política de serviço. Os contratos existentes podem ser cancelados e renegociados.
+341;Are you sure you want to remove service policy for {Svcorg}/{Service} from the Horizon Exchange?;Tem certeza de que deseja remover a política de serviço de {Svcorg}/{Service} do Horizon Exchange?
+342;Removing Service policy and re-evaluating all agreements based on just the built-in node policy. Existing agreements might be cancelled and re-negotiated.;Removendo a política de serviço e reavaliando todos os contratos baseados apenas na política do nó integrado. Os contratos existentes podem ser cancelados e renegociados.
+343;theUser '{TrimPrefixtheUser_}' not found in org {Org};theUser '{TrimPrefixtheUser_}' não localizado na organização {Org}
+344;failed to marshal 'exchange user list' output: {Err};Falha ao serializar a saída 'exchange user list': {Err}
+345;the email must be specified via -e if the username is not an email address.;O e-mail deve ser especificado por meio de -e, caso o nome do usuário não seja um endereço de e-mail.
+346;Warning: this will also delete all Exchange resources owned by this user (nodes, services, patterns, etc). Are you sure you want to remove user {Org}/{User} from the Horizon Exchange?;Aviso: isso também excluirá todos os recursos do Exchange pertencentes a esse usuário (nós, serviços, padrões, etc). Tem certeza de que deseja remover o usuário {Org}/{User} do Horizon Exchange?
+347;user '{User}' not found in org {Org};Usuário '{User}' não localizado na organização {Org}
+348;Error parsing the selections {Form}. {Err};Erro ao analisar as seleções {Form}. {Err}
+349;Error getting {Resource} for output, error {Err};Erro ao obter {Resource} para a saída, erro {Err}
+350;Error parsing input for node configuration/registration. Input body couldn't be deserialized to node object: {Arg_1}, error: {Arg_2};Erro ao analisar a entrada para configuração/registro do nó. O corpo da entrada não pôde ser desserializado para o objeto de nó: {Arg_1}, erro: {Arg_2}
+351;Error parsing input for node configuration/registration. Input body couldn't be deserialized to configstate object: {Arg_1}, error: {Arg_2};Erro ao analisar a entrada para configuração/registro do nó. O corpo da entrada não pôde ser desserializado para o objeto configstate: {Arg_1}, erro: {Arg_2}
+352;Error parsing input for node update. Input body couldn't be deserialized to node object: {Arg_1}, error: {Arg_2};Erro ao analisar a entrada para atualização do nó. O corpo da entrada não pôde ser desserializado para o objeto de nó: {Arg_1}, erro: {Arg_2}
+353;Error parsing input for node policy. Input body could not be deserialized as a policy object: {Arg_1}, error: {Arg_2};Erro ao analisar a entrada para a política do nó. O corpo da entrada não pôde ser desserializado como um objeto de política: {Arg_1}, erro: {Arg_2}
+354;Error parsing input for node policy patch. Input body could not be deserialized into a Constraint Expression or Property List: {Arg_1}, error: {Arg_2};Erro ao analisar a entrada para a correção da política de nó. O corpo da entrada não pôde ser desserializado em uma Expressão de restrição ou Lista de propriedades: {Arg_1}, erro: {Arg_2}
+355;Error parsing input for node policy patch. Input body did not contain a Constraint Expression or Property List: {Arg_1}, error: {Arg_2};Erro ao analisar a entrada para a correção da política de nó. O corpo da entrada não continha uma Expressão de restrição ou Lista de propriedades: {Arg_1}, erro: {Arg_2}
+356;Error parsing input for node user input. Input body could not be deserialized as a UserInput object: {Arg_1}, error: {Arg_2};Erro ao analisar a entrada para entrada do usuário do nó. O corpo da entrada não pôde ser desserializado como um objeto UserInput: {Arg_1}, erro: {Arg_2}
+357;Error in node configuration/registration for node {Arg_1}. {Arg_2};Erro de configuração/registro do nó para o nó {Arg_1}. {Arg_2}
+358;Error in updating node {Arg_1}. {Arg_2};Erro ao atualizar o nó {Arg_1}. {Arg_2}
+359;Error in node unregistration. {Arg_1};Erro na remoção de registro do nó. {Arg_1}
+360;Error verifiying exchange version. error: {Arg_1};Erro ao verificar a versão do Exchange. erro {Arg_1}
+361;Error in creating or replacing node policy. {Arg_1};Erro ao criar ou substituir a política do nó. {Arg_1}
+362;Error in patching node policy. {Arg_1};Erro ao corrigir a política do nó. {Arg_1}
+363;Error in deleting node policy. {Arg_1};Erro ao excluir a política do nó. {Arg_1}
+364;Error in updating node user input. {Arg_1};Erro ao atualizar a entrada do usuário do nó. {Arg_1}
+365;Error in patching node user input. {Arg_1};Erro ao corrigir a entrada do usuário do nó. {Arg_1}
+366;Error in deleting node userinput. {Arg_1};Erro ao excluir a entrada do usuário do nó. {Arg_1}
+367;Start node configuration/registration for node {Arg_1}.;Iniciar configuração/registro do nó para o nó {Arg_1}.
+368;Start updating node {Arg_1}.;Iniciar atualização do nó {Arg_1}.
+369;Complete node update for {Arg_1}.;Concluir atualização do nó para {Arg_1}.
+370;Start node unregistration.;Iniciar remoção de registro do nó.
+371;Node unregistration complete for node {Arg_1}.;Remoção de registro do nó concluída para o nó {Arg_1}.
+372;Error unregistring the node. The node is not found from the database.;Erro ao cancelar o registro do nó. O nó não foi localizado no banco de dados.
+373;Error unregistring the node. The node must be in 'configured' or 'configuring' state in order to unconfigure it.;Erro ao cancelar o registro do nó. O nó deve estar no estado 'configured' ou 'configuring' para ser desconfigurado.
+374;Input error for node unregistration. {Arg_1} is an incorrect value for removeNode;Erro de entrada para remoção de registro do nó. {Arg_1} é um valor incorreto para removeNode
+375;Input error for node unregistration. {Arg_1} is an incorrect value for deepClean;Erro de entrada para remoção de registro do nó. {Arg_1} é um valor incorreto para deepClean
+376;Input error for node unregistration. {Arg_1} is an incorrect value for block;Erro de entrada para remoção de registro do nó. {Arg_1} é um valor incorreto para o bloco
+377;Unable to read node object from database, error {Arg_1};Não é possível ler o objeto de nó a partir do banco de dados, erro {Arg_1}
+378;Error saving new node config state (unconfiguring) in the database: {Arg_1};Erro ao salvar o novo estado de configuração do nó (unconfiguring) no banco de dados: {Arg_1}
+379;Error in node configuration. The node is not found from the database.;Erro na configuração do nó. O nó não foi localizado no banco de dados.
+380;Error in node configuration. The node must be in 'configured' or 'configuring' state in order to change the state to {Arg_1}.;Erro na configuração do nó. O nó deve estar no estado 'configured' ou 'configuring' para que seja possível alterar seu estado para {Arg_1}.
+381;Node state transition from '{Arg_1}' to '{Arg_2}' is not supported.;A transição de estado do nó de '{Arg_1}' para '{Arg_2}' não é suportada.
+382;Failed get user input from local db. {Arg_1};Falha ao obter entrada do usuário a partir do banco de dados local. {Arg_1}
+383;Failed to find preferences for service {Arg_1}/{Arg_2} from the local user input, error: {Arg_3};Falha ao localizar preferências para o serviço {Arg_1}/{Arg_2} a partir da entrada do usuário local, erro: {Arg_3}
+384;Error saving new node config state to database: {Arg_1};Erro ao salvar o novo estado de configuração do nó no banco de dados: {Arg_1}
+385;Complete node configuration/registration for node {Arg_1}.;Concluir configuração/registro do nó para o nó {Arg_1}.
+386;Error in service configuration for {Arg_1}. {Arg_2};Erro na configuração de serviço para {Arg_1}. {Arg_2}
+387;Error getting service references for pattern {Arg_1}. {Arg_2};Erro ao obter referências de serviço para o padrão {Arg_1}. {Arg_2}
+388;New node policy: {Arg_1};Nova política de nó: {Arg_1}
+389;Deleted node policy;Política de nó excluída
+390;New node user input: {Arg_1};Nova entrada do usuário do nó: {Arg_1}
+391;No node user input to detele;Nenhuma entrada do usuário do nó para ser excluída
+392;Deleted all node user input;Todas as entradas de usuário do nó excluídas
+393;Start service configuration with user input for {Arg_1}/{Arg_2}.;Iniciar configuração de serviço com a entrada do usuário para {Arg_1}/{Arg_2}.
+394;Start service auto configuration for {Arg_1}/{Arg_2}.;Iniciar configuração automática do serviço para {Arg_1}/{Arg_2}.
+395;Complete service configuration for {Arg_1}/{Arg_2}.;Concluir a configuração do serviço para {Arg_1}/{Arg_2}.
+396;Complete service auto configuration for {Arg_1}/{Arg_2}.;Concluir configuração automática do serviço para {Arg_1}/{Arg_2}.
+397;Variable {Arg_1} is missing in the service configuration for {Arg_2}/{Arg_3}. It may cause agreement not formed if the business policy does not contain the setting for the missing variable.;A variável {Arg_1} está ausente na configuração de serviço para {Arg_2}/{Arg_3}. Isso pode causar a não formação do contrato caso a política de negócio não contenha a configuração para a variável ausente.
+398;Error configuring service {Arg_1}. {Arg_2};Erro ao configurar o serviço {Arg_1}. {Arg_2}
+399;Error changing service configstate {Arg_1}, error {Arg_2};Erro ao alterar o configstate do serviço {Arg_1}, erro {Arg_2}
+400;Start changing service configuration state to {Arg_1} for {Arg_2} for the node.;Iniciar alteração do estado de configuração do serviço para {Arg_1} para {Arg_2} para o nó.
+401;Complete changing service configuration state to {Arg_1} for {Arg_2} for the node.;Concluir a alteração do estado de configuração do serviço para {Arg_1} para {Arg_2} para o nó.
+402;Error converting the selections into Selectors: {Err};Erro ao converter as seleções em Seletores: {Err}
+403;properties contains an invalid property: {Err};As propriedades contêm uma propriedade inválida: {Err}
+404;Property must include a name and a value: {Property};A propriedade deve incluir um nome e um valor: {Property}
+405;Property {Name} has invalid property type {DeclaredType}. Allowed property types are: version, string, int, boolean, float, and list of string.;A propriedade {Name} possui um tipo de propriedade inválido {DeclaredType}. Os tipos de propriedade permitidos são: version, string, int, boolean, float e list of string.
+406;Property value is of type {ActualType}, expected type {DeclaredType};O valor da propriedade é do tipo {ActualType}, tipo esperado {DeclaredType}
+407;Value {Value} of property {Name} is not an integer type;O valor {Value} da propriedade {Name} não é um tipo de número inteiro
+408;Value {Value} of property {Name} is not a valid string. Please define type or change value to a string.;O valor {Value} da propriedade {Name} não é uma sequência válida. Defina o tipo ou altere o valor para uma sequência.
+409;Property {Name} with value {Value} is not a valid verion string;A propriedade {Name} com o valor {Value} não é uma sequência de versões válida
+410;Property {Name} has invalid value type {ActualType};A propriedade {Name} possui um tipo de valor inválido {ActualType}
+411;failed to marshal 'hzn policy list' output: {Err};Falha ao serializar a saída 'hzn policy list': {Err}
+412;Are you sure you want to remove the node policy?;Tem certeza de que deseja remover a política do nó?
+413;A list of policy properties that describe the object.;Uma lista de propriedades de política que descrevem o objeto.
+414;unable to make directory for self signed MMS API certificate, error {Err};Não é possível criar o diretório para o certificado de API MMS autografado, erro {Err}
+415;unable to generate random number for MMS API certificate serial number, error {Err};Não é possível gerar um número aleatório para o número de série do certificado de API do MMS, erro {Err}
+416;unable to generate private key for MMS API certificate, error {Err};Não é possível gerar a chave privada para o certificado de API do MMS, erro {Err}
+417;unable to create MMS API certificate, error {Err};Não é possível criar o certificado de API do MMS, erro {Err}
+418;unable to write MMS API certificate to file {ServerCertificate}, error {Err};Não é possível gravar o certificado de API do MMS no arquivo  {ServerCertificate}, erro {Err}
+419;unable to encode MMS API certificate to file {ServerCertificate}, error {Err};Não é possível codificar o certificado de API do MMS no arquivo {ServerCertificate}, erro {Err}
+420;unable to close MMS API certificate file {ServerCertificate}, error {Err};Não é possível fechar o arquivo do certificado de API do MMS {ServerCertificate}, erro {Err}
+421;unable to write MMS API certificate private key to file {ServerKey}, error {Err};Não é possível gravar a chave privada do certificado de API do MMS no arquivo {ServerKey}, erro {Err}
+422;unable to encode MMS API certificate private key to file {ServerKey}, error {Err};Não é possível codificar a chave privada do certificado de API do MMS no arquivo {ServerKey}, erro {Err}
+423;unable to close MMS API certificate private key file {ServerKey}, error {Err};Não é possível fechar o arquivo de chave privado do certificado de API do MMS {ServerKey}, erro {Err}
+424;this command can not be run before running 'hzn register';Este comando não pode ser executado antes da execução de 'hzn register'
+425;horizon api attributes output did not include 'attributes' key;A saída de atributos de API do Horizon não incluiu a chave 'attributes'
+426;failed to marshal 'hzn attribute list' output: {Err};Falha ao serializar a saída 'hzn attribute list': {Err}
+427;failed to marshal agreement with index {I}: {Err};Falha ao serializar o contrato com o índice {I}: {Err}
+428;agreement id {AgreementId} not found;ID do contrato {AgreementId} não localizado
+429;failed to marshal 'hzn agreement list' output: {Err};Falha ao serializar a saída 'hzn agreement list': {Err}
+430;deployment config {Dep} is not supported;A configuração de implementação {Dep} não é suportada
+431;starting test mode is not supported for this project;A inicialização do modo de teste não é suportada para este projeto
+432;Failed to get proper response from Horizon agent;Falha ao obter resposta adequada do agente do Horizon
+433;Horizon CLI version: {HORIZONVERSION};Versão da CLI do Horizon: {HORIZONVERSION}
+434;Horizon Agent version: {HorizonVersion};Versão do agente do Horizon: {HorizonVersion}
+435;must specify exchange credentials to access the model management service.;Deve-se especificar as credenciais do Exchange para acessar o serviço de gerenciamento de modelo.
+436;must specify object ID when requesting object details.;Deve-se especificar o ID do objeto ao solicitar detalhes do objeto.
+437;no objects type '{ObjType}' found in org {Org};Nenhum tipo de objeto '{ObjType}' localizado na organização {Org}
+438;object '{ObjId}' of type '{ObjType}' not found in org {Org};O objeto '{ObjId}' do tipo '{ObjType}' não foi localizado na organização {Org}
+439;destination detail for object '{ObjId}' of type '{ObjType}' not found in org {Org};O detalhe de destino do objeto '{ObjId}' do tipo '{ObjType}' não foi localizado na organização {Org}
+440;Object status: {Stringresp};Status do objeto: {Stringresp}
+441;Required: A unique identifier of the object.;Necessário: um identificador exclusivo do objeto.
+442;Required: The type of the object.;Necessário: o tipo do objeto.
+443;Required: The organization ID of the object (an object belongs to exactly one organization).;Necessário: o ID da organização do objeto (um objeto pertence a exatamente uma organização).
+444;The node id (without org prefix) where the object should be placed.;O ID do nó (sem o prefixo da organização) em que o objeto deve ser colocado.
+445;If omitted the object is sent to all nodes the same destinationType.;Se omitido, o objeto é enviado para todos os nós do mesmo destinationType.
+446;Delete this field when you are using destinationPolicy.;Exclua este campo quando estiver usando destinationPolicy.
+447;The pattern in use by nodes that should receive this object.;O padrão utilizado pelos nós que devem receber este objeto.
+448;If omitted (and if destinationsList is omitted too) the object is broadcast to all known nodes.;Se omitido (e se destinationsList for omitido também) o objeto será transmitido para todos os nós conhecidos.
+449;Delete this field when you are using policy.;Exclua este campo quando estiver usando a política.
+450;The list of destinations as an array of pattern:nodeId pairs that should receive this object.;A lista de destinos como uma matriz de pares pattern:nodeId que devem receber este objeto.
+451;If provided, destinationType and destinationID must be omitted.;Se fornecido, destinationType e destinationID devem ser omitidos.
+452;The policy specification that should be used to distribute this object.;A especificação de política a ser usada para distribuir este objeto.
+453;Delete these fields if the target node is using a pattern.;Exclua estes campos se o nó de destino estiver usando um padrão.
+454;Valid types are string, bool, int, float, list of string (comma separated), version.;Os tipos válidos são string, bool, int, float, list of string (separado por vírgulas), version.
+455;Type can be omitted if the type is discernable from the value, e.g. unquoted true is boolean.;O tipo pode ser omitido se for possível diferenciá-lo do valor, por exemplo, true sem aspas é boolean.
+456;A list of constraint expressions of the form <property name> <operator> <property value>, separated by boolean operators AND (&&) or OR (||).;Uma lista de expressões de restrição no formato <property name> <operator> <property value>, separados pelos operadores booleanos AND (&&) ou OR (||).
+457;The service(s) that will use this object.;O(s) serviço(s) que usa(m) este objeto.
+458;Set to '*' to indcate services of any hardware architecture.;Configure como '*' para indicar serviços de qualquer arquitetura de hardware.
+459;A version range.;Um intervalo de versão.
+460;A timestamp/date indicating when the object expires (it is automatically deleted). The timestamp should be provided in RFC3339 format.;Um registro de data e hora/data que indica quando o objeto expira (ele é excluído automaticamente). O registro de data e hora deve ser fornecido no formato RFC3339.
+461;Arbitrary string value. The value is not semantically interpreted. The Model Management System does not keep multiple version of an object.;Valor de sequência arbitrária. O valor não é interpretado de forma semântica. O sistema de gerenciamento de modelo não mantém várias versões de um objeto.
+462;An arbitrary description.;Uma descrição arbitrária.
+463;A timestamp/date as to when this object should automatically be activated. The timestamp should be provided in RFC3339 format.;Um registro de data e hora/data que mostra quando este objeto deve ser ativado automaticamente. O registro de data e hora deve ser fornecido no formato RFC3339.
+464;must specify exchange credentials to access the model management service;Deve-se especificar credenciais do Exchange para acessar o serviço de gerenciamento de modelo
+465;must specify --type with --id;Deve-se especificar --type com --id
+466;must specify --id with --type;Deve-se especificar --id com --type
+467;cannot specify --id and --type with --def;Não é possível especificar --id e --type com --def
+468;must specify either --type and --id or --def;Deve-se especificar --type e --id ou --def
+469;cannot specify --pattern with --def;Não é possível especificar --pattern com --def
+470;unable to read definition file {ObjMetadataFile}: {Err};Não é possível ler o arquivo de definição {ObjMetadataFile}: {Err}
+471;failed to unmarshal definition file {ObjMetadataFile}: {Err};Falha ao desserializar o arquivo de definição {ObjMetadataFile}: {Err}
+472;unable to open object file {ObjFile}: {Err};Não é possível abrir o arquivo de objeto {ObjFile}: {Err}
+473;Object {ObjFile} uploaded to org {Org} in the Model Management Service;Objeto {ObjFile} transferido por upload para a organização {Org} no serviço de gerenciamento de modelo
+474;Object {ObjectID} added to org {Org} in the Model Management Service;Objeto {ObjectID} incluído na organização {Org} no serviço de gerenciamento de modelo
+475;Object {ObjId} deleted from org {Org} in the Model Management Service;Objeto {ObjId} excluído da organização {Org} no serviço de gerenciamento de modelo
+476;health status API returned HTTP code {HttpCode};A API de status de funcionamento retornou o código HTTP {HttpCode}
+477;unable to create network {NETWORKNAME} for file sync service, error {Err};Não é possível criar a rede {NETWORKNAME} para o serviço de sincronização de arquivo, erro {Err}
+478;unable to start CSS, error {Err};Não é possível iniciar o CSS, erro {Err}
+479;unable to load file objects into CSS, error {Err};Não é possível carregar objetos de arquivo no CSS, erro {Err}
+480;unable to start ESS, error {Err};Não é possível iniciar o ESS, erro {Err}
+481;Unable to stop {MakeLabelNameESSNAME}, error {Err};Não é possível parar {MakeLabelNameESSNAME}, erro {Err}
+482;Unable to remove network {NETWORKNAME} for file sync service, error {Err};Não é possível remover a rede {NETWORKNAME} para o serviço de sincronização de arquivo, erro {Err}
+483;unable to list existing docker images, error {Err};Não é possível listar as imagens existentes do Docker, erro {Err}
+484;Found docker image {Name} locally.;Imagem do Docker {Name} encontrada localmente.
+485;unable to pull CSS container using image {GetFSSFullImageName}, error {Err}. Set environment variable {DEVTOOLHZNFSSIMAGETAG} to use a different image tag.;Não é possível extrair o contêiner CSS usando a imagem {GetFSSFullImageName}, erro {Err}. Configure a variável de ambiente {DEVTOOLHZNFSSIMAGETAG} para usar uma tag de imagem diferente.
+486;Pulled docker image {Name}.;Imagem do Docker extraída {Name}.
+487;unable to create CSS container using image {GetFSSImageName}, error {Err}. Set environment variable {DEVTOOLHZNFSSIMAGETAG} to use a diferent image tag.;Não é possível criar o contêiner CSS usando a imagem {GetFSSImageName}, erro {Err}. Configure a variável de ambiente {DEVTOOLHZNFSSIMAGETAG} para usar uma tag de imagem diferente.
+488;unable to start CSS container, error {Err};Não é possível iniciar o contêiner CSS, erro {Err}
+489;Created {MakeLabelNameCSSNAME} container, listening on host port {GetCSSPort};Contêiner {MakeLabelNameCSSNAME} criado, atendendo na porta do host {GetCSSPort}
+490;File sync service container {MakeLabelNameCSSNAME} listening on host port {GetCSSPort};Contêiner do serviço de sincronização de arquivo {MakeLabelNameCSSNAME} atendendo na porta do host {GetCSSPort}
+491;unable to create SSL certificate for ESS, error {Err};Não é possível criar o certificado SSL para o ESS, erro {Err}
+492;unable to open ESS SSL Certificate file {ESSSSLClientCertPath}, error {Err};Não é possível abrir o arquivo de certificado SSL do ESS {ESSSSLClientCertPath}, erro {Err}
+493;unable to read ESS SSL Certificate file {ESSSSLClientCertPath}, error {Err};Não é possível ler o arquivo de certificado SSL do ESS {ESSSSLClientCertPath}, erro {Err}
+494;unable to open ESS SSL Certificate Key file {ESSSSLCertKeyPath}, error {Err};Não é possível abrir o arquivo de chave do certificado SSL do ESS {ESSSSLCertKeyPath}, erro {Err}
+495;unable to read ESS SSL Certificate Key file {ESSSSLCertKeyPath}, error {Err};Não é possível ler o arquivo de chave do certificado SSL do ESS {ESSSSLCertKeyPath}, erro {Err}
+496;unable to create ESS container, error {Err};Não é possível criar o contêiner do ESS, erro {Err}
+497;unable to start ESS container, error {Err};Não é possível iniciar o contêiner do ESS, erro {Err}
+498;Created {MakeLabelNameESSNAME} container;Contêiner {MakeLabelNameESSNAME} criado
+499;unable to list docker containers, error {Err};Não é possível listar os contêineres do Docker, erro {Err}
+500;unable to stop docker container {Name}, error {Err};Não é possível parar o contêiner do Docker {Name}, erro {Err}
+501;unable to remove docker container {Name}, error {Err};Não é possível remover o contêiner do Docker {Name}, erro {Err}
+502;Stopped {Name} container;Contêiner {Name} parado
+503;Loading {FileName} into CSS;Carregando {FileName} no CSS
+504;unable to open file object {FileName}, error {Err};Não é possível abrir o objeto de arquivo {FileName}, erro {Err}
+505;unable to read file object {FileName}, error {Err};Não é possível ler o objeto de arquivo {FileName}, erro {Err}
+506;unable to add file {FileName} to the CSS, error {Err};Não é possível incluir o arquivo {FileName} no CSS, erro {Err}
+507;Configuration files {FileObjects} loaded into the File sync service.;Arquivos de configuração {FileObjects} carregados no serviço de sincronização de arquivo.
+508;unable to marshal CSS file PUT for {Metadata}, error {Err};Não é possível serializar o PUT do arquivo CSS para {Metadata}, erro {Err}
+509;unable to create CSS file PUT request for {Metadata}, error {Err};Não é possível criar a solicitação PUT do arquivo CSS para {Metadata}, erro {Err}
+510;unable to send CSS file PUT request to CSS for {Metadata}, error {Err};Não é possível enviar a solicitação PUT do arquivo CSS para {Metadata}, erro {Err}
+511;HTTP code: {StatusCode};Código HTTP: {StatusCode}
+512;unable to PUT file {Metadata} into CSS, HTTP code {StatusCode};Não é possível executar PUT no arquivo {Metadata} no CSS, código HTTP {StatusCode}
+513;Created network {Name};Rede {Name} criada
+514;unable to list docker networks, error {Err};Não é possível listar as redes do Docker, erro {Err}
+515;unable to remove docker network {Name}, error {Err};Não é possível remover a rede do Docker {Name}, erro {Err}
+516;Name, or Org is empty string.;Name ou Org é uma sequência de caracteres vazia.
+517;The serviceVersions array is empty.;A matriz serviceVersions está vazia.
+518;The constraint expression: {Dconstraints} is type {Dconstraints_1}, but is expected to be an array of strings;A expressão de restrição: {Dconstraints} é do tipo {Dconstraints_1}, mas espera-se que seja uma matriz de sequências
+519;unable to convert policy constraint {Remainder} into internal format, error {Err};Não é possível converter a restrição de política {Remainder} no formato interno, erro {Err}
+520;Logical operator {NextLogicalOperator} is not valid, expecting AND, OR, &&, ||;O operador lógico {NextLogicalOperator} não é válido, espera-se AND, OR, &&, ||
+521;found {Lenpieces} token(s), expecting 3 in an expression {Expression}, expected form is <property> == <value>;Localizados {Lenpieces} token(s), são esperados 3 na expressão {Expression} e o formato esperado é <property> == <value>
+522;found {Lenpieces} token(s), expecting 3 in an expression {Expression}, expected form is expression with 3 tokens: <property> <operator> <value> in constraint expression;Localizados {Lenpieces} token(s), são esperados 3 na expressão {Expression} e o formato esperado é uma expressão com 3 tokens: <property> <operator> <value> em uma expressão de restrição
+523;Expression: {Expression} should contain valid comparison operator - wrong operator {Pieces1}. Allowed operators: {Lessthan}, {Greaterthan}, {Equalto}, {Doubleequalto}, {Lessthaneq}, {Greaterthaneq}, {Notequalto}, {Inoperator};Expressão: {Expression} deve conter um operador de comparação válido - operador incorreto {Pieces1}. Operadores permitidos: {Lessthan}, {Greaterthan}, {Equalto}, {Doubleequalto}, {Lessthaneq}, {Greaterthaneq}, {Notequalto}, {Inoperator}
+524;Comparison operator: {CompOp} is not supported for numeric value: {Value};Operador de comparação: {CompOp} não é suportado para o valor numérico: {Value}
+525;Comparison operator: {CompOp} is not supported for boolean value: {Value};Operador de comparação: {CompOp} não é suportado para o valor booleano: {Value}
+526;Comparison operator: {CompOp} is not supported for string list value: {Value};Operador de comparação: {CompOp} não é suportado para o valor de lista de sequências: {Value}
+527;Comparison operator: {CompOp} is not supported for string value: {Value};Operador de comparação: {CompOp} não é suportado para o valor da sequência de caracteres: {Value}
+528;Comparison operator: {CompOp} is not supported for single version: {Value};Operador de comparação: {CompOp} não é suportado para a versão única: {Value}
+529;Comparison operator: {CompOp} is not supported for version expression: {Value};Operador de comparação: {CompOp} não é suportado para a expressão de versão: {Value}
+530;Expression: {Expression} is not valid;Expressão: {Expression} não é válida
+531;Command line interface for Horizon agent. Most of the sub-commands use the Horizon Agent API at the default location http://localhost (see environment Environment Variables section to override this).\\\\Environment Variables:\\  HORIZON_URL:  Override the URL at which hzn contacts the Horizon Agent API.\\      This can facilitate using a remote Horizon Agent via an ssh tunnel.\\  HZN_EXCHANGE_URL:  Override the URL that the 'hzn exchange' sub-commands use\\      to communicate with the Horizon Exchange, for example\\      https://exchange.bluehorizon.network/api/v1. (By default hzn will ask the\\      Horizon Agent for the URL.)\\  HZN_ORG_ID:  Default value for the 'hzn exchange -o' flag,\\      to specify the organization ID'.\\  HZN_EXCHANGE_USER_AUTH:  Default value for the 'hzn exchange -u' or 'hzn\\	  register -u' flag, in the form '[org/]user:pw'. Notice that HZN_ORG_ID can be set\\	  if org is omitted when HZN_EXCHANGE_USER_AUTH is set.\\  HZN_FSS_CSSURL:  Override the URL that the 'hzn mms' sub-commands use\\      to communicate with the Horizon Model Management Service, for example\\      https://exchange.bluehorizon.network/css/. (By default hzn will ask the\\      Horizon Agent for the URL.)\\\\  All these environment variables and ones mentioned in the command help can be\\  specified in user's configuration file: ~/.hzn/hzn.json with JSON format.\\  For example:\\  {Com____};Interface da linha de comandos para o agente do Horizon. A maioria dos subcomandos usa a API do Horizon Agent no local padrão http://localhost (consulte a seção Variáveis de ambiente para substituir isso).\\\\Variáveis de ambiente:\\  HORIZON_URL:  substitua a URL na qual o hzn entra em contato com a API do Horizon Agent.\\      Isso pode facilitar o uso do Horizon Agent remoto por meio de um túnel ssh.\\  HZN_EXCHANGE_URL:  substitua a URL que os subcomandos 'hzn exchange' usam\\      para se comunicar com o Horizon Exchange, por exemplo\\      https://exchange.bluehorizon.network/api/v1. (Por padrão, o hzn solicitará ao\\      Horizon Agent que forneça a URL.)\\  HZN_ORG_ID:  o valor padrão para a sinalização 'hzn exchange -o',\\     para especificar o ID da organização'.\\  HZN_EXCHANGE_USER_AUTH:  o valor padrão para a sinalização 'hzn exchange -u' ou 'hzn\\	  register -u', no formato '[org/]user:pw'. Observe que HZN_ORG_ID pode ser configurado \\	  se a organização for omitida quando HZN_EXCHANGE_USER_AUTH for configurado.\\  HZN_FSS_CSSURL:  substitua a URL que os subcomandos 'hzn mms' usam\\      para se comunicar com o Horizon Model Management Service, por exemplo\\      https://exchange.bluehorizon.network/css/. (Por padrão, o hzn solicitará ao\\      Horizon Agent que forneça a URL.)\\\\  Todas essas variáveis de ambiente e as que são mencionadas na ajuda do comando podem ser\\  especificadas no arquivo de configuração do usuário: ~/.hzn/hzn.json com formato JSON.\\  Por exemplo:\\  {Com____}
+532;Verbose output.;Saída detalhada.
+533;When calling the Horizon or Exchange API, do GETs, but don't do PUTs, POSTs, or DELETEs.;Ao chamar a API do Horizon ou Exchange, execute GETs, mas não execute PUTs, POSTs ou DELETEs.
+534;Show the Horizon version.;Mostrar a versão do Horizon.
+535;Show the architecture of this machine (as defined by Horizon and golang).;Mostrar a arquitetura desta máquina (conforme definido por Horizon e golang).
+536;List and manage Horizon Exchange resources.;Listar e gerenciar recursos do Horizon Exchange.
+537;The Horizon exchange organization ID. If not specified, HZN_ORG_ID will be used as a default.;O ID da organização do Horizon Exchange. Se não especificado, HZN_ORG_ID será usado como padrão.
+538;Horizon Exchange user credentials to query and create exchange resources. If not specified, HZN_EXCHANGE_USER_AUTH will be used as a default. If you don't prepend it with the user's org, it will automatically be prepended with the -o value. As an alternative to using -o, you can set HZN_ORG_ID with the Horizon exchange organization ID;As credenciais do usuário do Horizon Exchange para consultar e criar recursos do Exchange. Se não especificado, HZN_EXCHANGE_USER_AUTH será usado como padrão. Se o valor não for prefixado com a organização do usuário, ele será automaticamente prefixado com o valor -o. Como uma alternativa ao uso de -o, é possível configurar HZN_ORG_ID com o ID da organização do Horizon Exchange
+539;Display the version of the Horizon Exchange.;Exibir a versão do Horizon Exchange.
+540;Display the status of the Horizon Exchange.;Exibir o status do Horizon Exchange.
+541;List and manage users in the Horizon Exchange.;Listar e gerenciar usuários no Horizon Exchange.
+542;Display the user resource from the Horizon Exchange. (Normally you can only display your own user. If the user does not exist, you will get an invalid credentials error.);Exibir o recurso de usuário do Horizon Exchange. (Normalmente, é possível exibir apenas seu próprio usuário. Se o usuário não existir, você obterá um erro de credenciais inválidas.)
+543;List this one user. Default is your own user. Only admin users can list other users.;Listar este usuário. O padrão é seu próprio usuário. Apenas usuários administradores podem listar outros usuários.
+544;List all users in the org. Will only do this if you are a user with admin privilege.;Listar todos os usuários na organização. Isso só é possível se você for um usuário com privilégio de administrador.
+545;When listing all of the users, show only the usernames, instead of each entire resource.;Ao listar todos os usuários, mostrar apenas os nomes de usuário, em vez de cada recurso inteiro.
+546;Create the user resource in the Horizon Exchange.;Criar o recurso de usuário no Horizon Exchange.
+547;Your username for this user account when creating it in the Horizon exchange.;Seu nome de usuário para esta conta de usuário ao criá-lo no Horizon Exchange.
+548;Your password for this user account when creating it in the Horizon exchange.;Sua senha para esta conta de usuário ao criá-la no Horizon Exchange.
+549;Your email address that should be associated with this user account when creating it in the Horizon exchange. If your username is an email address, this argument can be omitted.;Seu endereço de e-mail que deve ser associado a esta conta do usuário ao criá-la no Horizon Exchange. Se seu nome de usuário for um endereço de e-mail, esse argumento pode ser omitido.
+550;This user should be an administrator, capable of managing all resources in this org of the exchange.;Este usuário deve ser um administrador, capaz de gerenciar todos os recursos nesta organização do Exchange.
+551;Change the existing user to be an admin user (like root in his/her org) or to no longer be an admin user. Can only be run by exchange root or another admin user.;Alterar o usuário existente para ser um usuário administrativo (como o usuário raiz em sua organização) ou para não ser mais um usuário administrativo. Só pode ser executado pelo usuário raiz do Exchange ou por outro usuário administrativo.
+552;The user to be modified.;O usuário a ser modificado.
+553;True if they should be an admin user, otherwise false.;True se ele deve ser o usuário administrativo, caso contrário, false.
+554;Remove a user resource from the Horizon Exchange. Warning: this will cause all exchange resources owned by this user to also be deleted (nodes, services, patterns, etc).;Remover um recurso do usuário do Horizon Exchange. Aviso: isso também causará a exclusão de todos os recursos do Exchange pertencentes a esse usuário (nós, serviços, padrões, etc).
+555;The user to remove.;O usuário a ser removido.
+556;Skip the 'are you sure?' prompt.;Ignorar a parte 'Tem certeza?' .
+557;List and manage nodes in the Horizon Exchange;Listar e gerenciar os nós no Horizon Exchange
+558;Display the node resources from the Horizon Exchange.;Exibir os recursos do nó do Horizon Exchange.
+559;List just this one node.;Listar apenas este único nó.
+560;The Horizon Exchange node ID and token to be used as credentials to query and modify the node resources if -u flag is not specified. HZN_EXCHANGE_NODE_AUTH will be used as a default for -n. If you don't prepend it with the node's org, it will automatically be prepended with the -o value.;O ID do nó do Horizon Exchange e o token a serem usados como credenciais para consultar e modificar os recursos do nó se a sinalização -u não for especificada. HZN_EXCHANGE_NODE_AUTH será usado como padrão para -n. Se o valor não for prefixado com a organização do nó, ele será automaticamente prefixado com o valor -o.
+561;When listing all of the nodes, show the entire resource of each node, instead of just the name.;Ao listar todos os nós, mostrar o recurso inteiro de cada nó, em vez de apenas o nome.
+562;Create the node resource in the Horizon Exchange.;Criar o recurso do nó no Horizon Exchange.
+563;The Horizon Exchange node ID and token to be created. The node ID must be unique within the organization.;O ID do nó do Horizon Exchange e o token a serem criados. O ID do nó deve ser exclusivo na organização.
+564;Your email address. Only needs to be specified if: the user specified in the -u flag does not exist, and you specified the 'public' org. If these things are true we will create the user and include this value as the email attribute.;Seu endereço de e-mail. Precisa ser especificado apenas se: o usuário especificado na sinalização -u não existir e você tiver especificado a organização 'public'. Se essas afirmações forem verdadeiras, criaremos o usuário e incluiremos esse valor como o atributo de e-mail.
+565;Your node architecture. If not specified, arch will leave blank.;Sua arquitetura de nó. Se não especificado, o arch deixará em branco.
+566;The name of your node;O nome de seu nó
+567;The node to be created.;O nó a ser criado.
+568;The token the new node should have.;O token que o novo nó deve ter.
+569;Update an attribute of the node in the Horizon Exchange.;Atualizar um atributo do nó no Horizon Exchange.
+570;The node to be updated.;O nó a ser atualizado.
+571;The path to a json file containing the changed attribute to be updated in the Horizon Exchange. Specify -f- to read from stdin.;O caminho para um arquivo JSON que contém o atributo alterado a ser atualizado no Horizon Exchange. Especifique -f- para ler a partir de stdin.
+572;Change the token of a node resource in the Horizon Exchange.;Alterar o token de um recurso de nó no Horizon Exchange.
+573;The node to be changed.;O nó a ser alterado.
+574;The new token for the node.;O novo token para o nó.
+575;Check to see if the specified node and token are valid in the Horizon Exchange.;Verifique se o nó e o token especificados são válidos no Horizon Exchange.
+576;The Horizon exchange node ID and token to be checked. If not specified, HZN_EXCHANGE_NODE_AUTH will be used as a default. Mutually exclusive with <node> and <token> arguments.;O ID do nó e o token do Horizon Exchange a serem verificados. Se não especificado, HZN_EXCHANGE_NODE_AUTH será usado como padrão. É mutuamente exclusivo com os argumentos <node> e <token>.
+577;The node id to be checked. Mutually exclusive with -n flag.;O ID do nó a ser verificado. Mutuamente exclusivo com a sinalização -n.
+578;The token for the node. Mutually exclusive with -n flag.;O token para o nó. Mutuamente exclusivo com a sinalização -n.
+579;Remove a node resource from the Horizon Exchange. Do NOT do this when an edge node is registered with this node id.;Remover um recurso de nó do Horizon Exchange. NÃO faça isso quando um nó de ponta estiver registrado com este ID de nó.
+580;The Horizon Exchange node ID and token to be used as credentials to query and modfy the node resources if -u flag is not specified. HZN_EXCHANGE_NODE_AUTH will be used as a default for -n. If you don't prepend it with the node's org, it will automatically be prepended with the -o value.;O ID do nó do Horizon Exchange e o token a serem usados como credenciais para consultar e modificar os recursos do nó se a sinalização -u não for especificada. HZN_EXCHANGE_NODE_AUTH será usado como padrão para -n. Se o valor não for prefixado com a organização do nó, ele será automaticamente prefixado com o valor -o.
+581;The node to remove.;O nó a ser removido.
+582;Display the node policy from the Horizon Exchange.;Exibir a política de nó do Horizon Exchange.
+583;List policy for this node.;Listar política para este nó.
+584;Add or replace the node policy in the Horizon Exchange.;Incluir ou substituir a política de nó no Horizon Exchange.
+585;Add or replace policy for this node.;Incluir ou substituir a política para este nó.
+586;The path of a JSON file containing the metadata necessary to create/update the node policy in the Horizon exchange. Specify -f- to read from stdin.;O caminho de um arquivo JSON que contém os metadados necessários para criar/atualizar a política do nó no Horizon Exchange. Especifique -f- para ler a partir de stdin.
+587;Update an attribute of the policy for this node in the Horizon Exchange.;Atualizar um atributo da política para este nó no Horizon Exchange.
+588;Update the policy for this node.;Atualizar a política para este nó.
+589;The path of a JSON file containing the attribute to be updated in the Horizon Exchange. Specify -f- to read from stdin.;O caminho de um arquivo JSON que contém o atributo a ser atualizado no Horizon Exchange. Especifique -f- para ler a partir de stdin.
+590;Remove the node policy in the Horizon Exchange.;Remover a política de nó do Horizon Exchange.
+591;Remove policy for this node.;Remover a política para este nó.
+592;List and manage agbots in the Horizon Exchange;Listar e gerenciar agbots no Horizon Exchange
+593;Display the agbot resources from the Horizon Exchange.;Exibir os recursos do agbot a partir do Horizon Exchange.
+594;List just this one agbot.;Listar apenas este único agbot.
+595;When listing all of the agbots, show the entire resource of each agbots, instead of just the name.;Ao listar todos os agbots, mostrar o recurso inteiro de cada agbot, em vez de apenas o nome.
+596;Display the patterns that this agbot is serving.;Exibir os padrões que este agbot está servindo.
+597;The agbot to list the patterns for.;O agbot para o qual listar padrões.
+598;The organization of the 1 pattern to list.;A organização do padrão a ser listado.
+599;The name of the 1 pattern to list.;O nome do padrão a ser listado.
+600;The organization of the nodes that should be searched. Defaults to patternorg.;A organização dos nós que devem ser procurados. Padronizado como patternorg.
+601;Add this pattern to the list of patterns this agbot is serving.;Incluir este padrão na lista de padrões que este agbot está servindo.
+602;The agbot to add the pattern to.;O agbot para o qual incluir o padrão.
+603;The organization of the pattern to add.;A organização do padrão a ser incluído.
+604;The name of the pattern to add.;O nome do padrão a ser incluído.
+605;Remove this pattern from the list of patterns this agbot is serving.;Remover este padrão da lista de padrões que este agbot está servindo.
+606;The agbot to remove the pattern from.;O agbot do qual remover o padrão.
+607;The organization of the pattern to remove.;A organização do padrão a ser removido.
+608;The name of the pattern to remove.;O nome do padrão a ser removido.
+609;Display the business policies that this agbot is serving.;Exibir as políticas de negócios que este agbot está servindo.
+610;The agbot to list serving business policies for.;O agbot para o qual listar políticas de negócios de serviço.
+611;Add this business policy to the list of policies this agbot is serving. Currently only support adding all the business polycies from an organization.;Incluir esta política de negócio na lista de políticas que este agbot está servindo. Atualmente, suporta apenas a inclusão de todas as políticas de negócios de uma organização.
+612;The agbot to add the business policy to.;O agbot para o qual incluir a política de negócio.
+613;The organization of the business policy to add.;A organização da política de negócio a ser incluída.
+614;Remove this business policy from the list of policies this agbot is serving. Currently only support removing all the business polycies from an organization.;Remover esta política de negócio da lista de políticas que este agbot está servindo. Atualmente, suporta apenas a remoção de todas as políticas de negócios de uma organização.
+615;The agbot to remove the business policy from.;O agbot do qual remover a política de negócio.
+616;The organization of the business policy to remove.;A organização da política de negócio a ser removida.
+617;List and manage patterns in the Horizon Exchange;Listar e gerenciar padrões no Horizon Exchange
+618;Display the pattern resources from the Horizon Exchange.;Exibir os recursos padrão do Horizon Exchange.
+619;List just this one pattern. Use <org>/<pat> to specify a public pattern in another org, or <org>/ to list all of the public patterns in another org.;Listar apenas este único padrão. Use <org>/<pat> para especificar um padrão público em outra organização ou <org>/ para listar todos os padrões públicos em outra organização.
+620;When listing all of the patterns, show the entire resource of each pattern, instead of just the name.;Ao listar todos os padrões, mostrar o recurso inteiro de cada padrão, em vez de apenas o nome.
+621;Sign and create/update the pattern resource in the Horizon Exchange.;Assinar e criar/atualizar o recurso padrão no Horizon Exchange.
+622;The path of a JSON file containing the metadata necessary to create/update the pattern in the Horizon exchange. See /usr/horizon/samples/pattern.json. Specify -f- to read from stdin.;O caminho de um arquivo JSON que contém os metadados necessários para criar/atualizar o padrão no Horizon Exchange. Consulte /usr/horizon/samples/pattern.json. Especifique -f- para ler a partir de stdin.
+623;The path of a private key file to be used to sign the pattern. If not specified, the environment variable HZN_PRIVATE_KEY_FILE will be used. If none of them are set, ~/.hzn/keys/service.private.key is the default.;O caminho de um arquivo de chave privado a ser usado para assinar o padrão. Se não especificado, a variável de ambiente HZN_PRIVATE_KEY_FILE será usada. Caso nenhum dos dois seja especificado, ~/.hzn/keys/service.private.key será o padrão.
+624;The path of public key file (that corresponds to the private key) that should be stored with the pattern, to be used by the Horizon Agent to verify the signature. If both this and -k flags are not specified, the environment variable HZN_PUBLIC_KEY_FILE will be used. If HZN_PUBLIC_KEY_FILE is not set, ~/.hzn/keys/service.public.pem is the default. If -k is specified and this flag is not specified, then no public key file will be stored with the pattern. The Horizon Agent needs to import the public key to verify the signature.;O caminho do arquivo de chave pública (que corresponde à chave privada) que deve ser armazenado com o padrão, a ser usado pelo Horizon Agent para verificar a assinatura. Se esse item e as sinalizações -k não forem especificados, a variável de ambiente HZN_PUBLIC_KEY_FILE será usada. Se HZN_PUBLIC_KEY_FILE não for configurado, ~/.hzn/keys/service.public.pem será o padrão. Se -k for especificado e essa sinalização não for especificada, nenhum arquivo de chave pública será armazenado com o padrão. O Horizon Agent precisa importar a chave pública para verificar a assinatura.
+625;The name to use for this pattern in the Horizon exchange. If not specified, will default to the base name of the file path specified in -f.;O nome a ser usado para este padrão no Horizon Exchange. Se não especificado, o padrão será o nome base do caminho de arquivo especificado em -f.
+626;Verify the signatures of a pattern resource in the Horizon Exchange.;Verificar as assinaturas de um recurso padrão no Horizon Exchange.
+627;The pattern to verify.;O padrão a ser verificado.
+628;The path of a pem public key file to be used to verify the pattern. If not specified, the environment variable HZN_PUBLIC_KEY_FILE will be used. If none of them are set, ~/.hzn/keys/service.public.pem is the default.;O caminho de um arquivo de chave pública pem a ser usado para verificar o padrão. Se não especificado, a variável de ambiente HZN_PUBLIC_KEY_FILE será usada. Caso nenhum deles seja especificado, ~/.hzn/keys/service.public.pem será o padrão.
+629;Update an attribute of the pattern in the Horizon Exchange.;Atualizar um atributo do padrão no Horizon Exchange.
+630;The name of the pattern in the Horizon Exchange to publish.;O nome do padrão no Horizon Exchange a ser publicado.
+631;The path to a json file containing the updated attribute of the pattern to be put in the Horizon Exchange. Specify -f- to read from stdin.;O caminho para um arquivo JSON que contém o atributo atualizado do padrão a ser colocado no Horizon Exchange. Especifique -f- para ler a partir de stdin.
+632;Remove a pattern resource from the Horizon Exchange.;Remover um recurso padrão do Horizon Exchange.
+633;The pattern to remove.;O padrão a ser removido.
+634;List the signing public keys/certs for this pattern resource in the Horizon Exchange.;Listar as chaves públicas/os certificados de assinatura para este recurso padrão no Horizon Exchange.
+635;The existing pattern to list the keys for.;O padrão existente para o qual listar as chaves.
+636;The existing key name to see the contents of.;O nome da chave existente para a qual visualizar o conteúdo.
+637;Remove a signing public key/cert for this pattern resource in the Horizon Exchange.;Remover uma chave pública/um certificado de assinatura para este recurso padrão no Horizon Exchange.
+638;The existing pattern to remove the key from.;O padrão existente do qual remover a chave.
+639;The existing key name to remove.;O nome da chave existente a ser removida.
+640;List and manage services in the Horizon Exchange;Listar e gerenciar serviços no Horizon Exchange
+641;Display the service resources from the Horizon Exchange.;Exibir os recursos de serviço do Horizon Exchange.
+642;List just this one service. Use <org>/<svc> to specify a public service in another org, or <org>/ to list all of the public services in another org.;Listar apenas este único serviço. Use <org>/<svc> para especificar um serviço público em outra organização ou <org>/ para listar todos os serviços públicos em outra organização.
+643;When listing all of the services, show the entire resource of each services, instead of just the name.;Ao listar todos os serviços, mostrar o recurso inteiro de cada serviço, em vez de apenas o nome.
+644;Sign and create/update the service resource in the Horizon Exchange.;Assinar e criar/atualizar o recurso de serviço no Horizon Exchange.
+645;The path of a JSON file containing the metadata necessary to create/update the service in the Horizon exchange. See /usr/horizon/samples/service.json. Specify -f- to read from stdin.;O caminho de um arquivo JSON que contém os metadados necessários para criar/atualizar o serviço no Horizon Exchange. Consulte /usr/horizon/samples/service.json. Especifique -f- para ler a partir de stdin.
+646;The path of a private key file to be used to sign the service. If not specified, the environment variable HZN_PRIVATE_KEY_FILE will be used. If none of them are set, ~/.hzn/keys/service.private.key is the default.;O caminho de um arquivo de chave privado a ser usado para assinar o serviço. Se não especificado, a variável de ambiente HZN_PRIVATE_KEY_FILE será usada. Caso nenhum dos dois seja especificado, ~/.hzn/keys/service.private.key será o padrão.
+647;The path of public key file (that corresponds to the private key) that should be stored with the service, to be used by the Horizon Agent to verify the signature. If both this and -k flags are not specified, the environment variable HZN_PUBLIC_KEY_FILE will be used. If HZN_PUBLIC_KEY_FILE is not set, ~/.hzn/keys/service.public.pem is the default. If -k is specified and this flag is not specified, then no public key file will be stored with the service. The Horizon Agent needs to import the public key to verify the signature.;O caminho do arquivo de chave pública (que corresponde à chave privada) que deve ser armazenado com o serviço, a ser usado pelo Horizon Agent para verificar a assinatura. Se esse item e as sinalizações -k não forem especificados, a variável de ambiente HZN_PUBLIC_KEY_FILE será usada. Se HZN_PUBLIC_KEY_FILE não for configurado, ~/.hzn/keys/service.public.pem será o padrão. Se -k for especificado e essa sinalização não for especificada, nenhum arquivo de chave pública será armazenado com o serviço. O Horizon Agent precisa importar a chave pública para verificar a assinatura.
+648;The image paths in the deployment field have regular tags and should not be changed to sha256 digest values. The image will not get automatically uploaded to the repository. This should only be used during development when testing new versions often.;Os caminhos da imagem no campo de implementação possuem tags regulares e não devem ser alterados para valores de compilação sha256. A imagem não será automaticamente transferida por upload para o repositório. Isso deve ser usado apenas durante o desenvolvimento, caso novas versões sejam testadas com frequência.
+649;Use the image from the image repository. It will pull the image from the image repository and overwrite the local image if exists. This flag is mutually exclusive with -I.;Usar a imagem do repositório de imagem. Isso extrairá a imagem do repositório de imagem e sobrescreverá a imagem local, se existir. Essa sinalização é mutuamente exclusiva com -I.
+650;Docker registry domain and auth that should be stored with the service, to enable the Horizon edge node to access the service's docker images. This flag can be repeated, and each flag should be in the format: registry:user:token;O domínio de registro do Docker e a autenticação que devem ser armazenados com o serviço, para permitir que o nó de ponta do Horizon acesse as imagens do Docker do serviço. Essa sinalização pode ser repetida e cada sinalização deve estar no formato: registry:user:token
+651;Overwrite the existing version if the service exists in the exchange. It will skip the 'do you want to overwrite' prompt.;Sobrescrever a versão existente, se o serviço existir no Exchange. Isso ignorará o prompt 'deseja sobrescrever'.
+652;The path of the service policy JSON file to be used for the service to be published. This flag is optional;O caminho do arquivo JSON da política de serviço a ser usada para o serviço a ser publicado. Essa sinalização é opcional
+653;Verify the signatures of a service resource in the Horizon Exchange.;Verificar as assinaturas de um recurso de serviço no Horizon Exchange.
+654;The service to verify.;O serviço a ser verificado.
+655;The path of a pem public key file to be used to verify the service. If not specified, the environment variable HZN_PUBLIC_KEY_FILE will be used. If none of them are set, ~/.hzn/keys/service.public.pem is the default.;O caminho de um arquivo de chave pública pem a ser usado para verificar o serviço. Se não especificado, a variável de ambiente HZN_PUBLIC_KEY_FILE será usada. Caso nenhum deles seja configurado, ~/.hzn/keys/service.public.pem será o padrão.
+656;Remove a service resource from the Horizon Exchange.;Remover um recurso de serviço do Horizon Exchange.
+657;The service to remove.;O serviço a ser removido.
+658;List the signing public keys/certs for this service resource in the Horizon Exchange.;Listar as chaves públicas/os certificados de assinatura para este recurso de serviço no Horizon Exchange.
+659;The existing service to list the keys for.;O serviço existente para o qual listar as chaves.
+660;Remove a signing public key/cert for this service resource in the Horizon Exchange.;Remover uma chave pública/um certificado de assinatura para este recurso de serviço no Horizon Exchange.
+661;The existing service to remove the key from.;O serviço existente do qual remover a chave.
+662;List the docker auth tokens for this service resource in the Horizon Exchange.;Listar os tokens de autenticação do Docker para este recurso de serviço no Horizon Exchange.
+663;The existing service to list the docker auths for.;O serviço existente para o qual listar as autenticações do Docker.
+664;The existing docker auth id to see the contents of.;O ID de autenticação do Docker existente para o qual visualizar o conteúdo.
+665;Remove a docker auth token for this service resource in the Horizon Exchange.;Remover um token de autenticação do Docker para este recurso de serviço no Horizon Exchange.
+666;The existing service to remove the docker auth from.;O serviço existente do qual remover a autenticação do Docker.
+667;The existing docker auth id to remove.;O ID de autenticação do Docker existente a ser removido.
+668;Display the service policy from the Horizon Exchange.;Exibir a política de serviço do Horizon Exchange.
+669;The Horizon Exchange id and password of the user;O ID e a senha do usuário do Horizon Exchange
+670;List policy for this service.;Listar política para este serviço.
+671;Display an empty service policy template that can be filled in.;Exibir um modelo de política de serviço vazio que possa ser preenchido.
+672;Add or replace the service policy in the Horizon Exchange.;Incluir ou substituir a política de serviço no Horizon Exchange.
+673;The Horizon Exchange ID and password of the user;O ID e a senha do usuário do Horizon Exchange
+674;Add or replace policy for this service.;Incluir ou substituir política para este serviço.
+675;The path of a JSON file containing the metadata necessary to create/update the service policy in the Horizon Exchange. Specify -f- to read from stdin.;O caminho de um arquivo JSON que contém os metadados necessários para criar/atualizar a política de serviço no Horizon Exchange. Especifique -f- para ler a partir de stdin.
+676;Remove the service policy in the Horizon Exchange.;Remover a política de serviço do Horizon Exchange.
+677;Remove policy for this service.;Remover política para este serviço.
+678;List and manage business policies in the Horizon Exchange.;Listar e gerenciar políticas de negócios no Horizon Exchange.
+679;Display the business policies from the Horizon Exchange.;Exibir as políticas de negócios a partir do Horizon Exchange.
+680;The Horizon ID and password of the user.;O ID e a senha do usuário do Horizon.
+681;Display detailed output about the business policies.;Exibir a saída detalhada sobre as políticas de negócios.
+682;List just this one policy. Use <org>/<policy> to specify a public policy in another org, or <org>/ to list all of the public policies in another org.;Listar apenas esta única política. Use <org>/<policy> para especificar uma política pública em outra organização ou <org>/ para listar todas as políticas públicas em outra organização.
+683;Display an empty business policy template that can be filled in.;Exibir um modelo de política de negócio vazio que possa ser preenchido.
+684;Add or replace a business policy in the Horizon Exchange. Use 'hzn exchange business new' for an empty business policy template.;Incluir ou substituir uma política de negócio no Horizon Exchange. Use 'hzn exchange business new' para obter um modelo de política de negócio vazio.
+685;The name of the policy to add or overwrite.;O nome da política a ser incluída ou sobrescrita.
+686;Update one attribute of an existing policy in the Horizon Exchange. The supported attributes are the top level attributes in the policy definition as shown by the command 'hzn exchange business new'.;Atualizar um atributo de uma política existente no Horizon Exchange. Os atributos suportados são os atributos de nível superior na definição de política, conforme mostrado pelo comando 'hzn exchange business new'.
+687;The name of the policy to be updated in the Horizon Exchange.;O nome da política a ser atualizada no Horizon Exchange.
+688;The path to the json file containing the updated business policy attribute to be changed in the Horizon Exchange. Specify -f- to read from stdin.;O caminho para o arquivo JSON que contém o atributo de política de negócio atualizado a ser alterado no Horizon Exchange. Especifique -f- para ler a partir de stdin.
+689;Remove the business policy in the Horizon Exchange.;Remover a política de negócio do Horizon Exchange.
+690;The name of the business policy to be removed.;O nome da política de negócio a ser removida.
+691;List all public services/patterns in all orgs that have orgType: IBM.;Listar todos os serviços/padrões públicos em todas as organizações que tenham orgType: IBM.
+692;Display all public services in all orgs that have orgType: IBM.;Exibir todos os serviços públicos em todas as organizações que tenham orgType: IBM.
+693;Only display org (IBM) and service names.;Exibir apenas nomes de organizações (IBM) e serviços.
+694;Display detailed output about public services in all orgs that have orgType: IBM.;Exibir uma saída detalhada sobre serviços públicos em todas as organizações que possuem orgType: IBM.
+695;Display all public patterns in all orgs that have orgType: IBM.;Exibir todos os padrões públicos em todas as organizações que tenham orgType: IBM.
+696;Only display org (IBM) and pattern names.;Exibir apenas nomes de organizações (IBM) e padrões.
+697;Display detailed output about public patterns in all orgs that have orgType: IBM.;Exibir uma saída detalhada sobre padrões públicos em todas as organizações que possuem orgType: IBM.
+698;Create an input file template for this pattern that can be used for the 'hzn register' command (once filled in). This examines the services that the specified pattern uses, and determines the node owner input that is required for them.;Criar um modelo de arquivo de entrada para esse padrão que possa ser usado para o comando 'hzn register' (depois de preenchido). Isso examina os serviços usados pelo padrão especificado e determina a entrada do proprietário do nó que é necessária para eles.
+699;The Horizon exchange node ID and token (it must already exist).;O ID do nó e o token do Horizon Exchange (já devem existir).
+700;The JSON input template file name that should be created. This file will contain placeholders for you to fill in user input values.;O nome do arquivo de modelo de entrada JSON a ser criado. Esse arquivo conterá itens temporários a serem preenchidos com valores de entrada do usuário.
+701;The Horizon exchange organization ID that the node will be registered in.;O ID da organização do Horizon Exchange na qual o nó será registrado.
+702;The Horizon exchange pattern that describes what workloads that should be deployed to this node. If the pattern is from a different organization than the node, use the 'other_org/pattern' format.;O padrão do Horizon Exchange que descreve quais cargas de trabalho dever ser implementadas nesse nó. Se o padrão for de uma organização diferente do nó, use o formato 'other_org/pattern'.
+703;The architecture to write the template file for. (Horizon ignores services in patterns whose architecture is different from the target system.) The architecture must be what is returned by 'hzn node list' on the target system.;A arquitetura na qual gravar o arquivo de modelo. (O Horizon ignora os serviços em padrões cuja arquitetura é diferente do sistema de destino.) A arquitetura deve ser a que é retornada por 'hzn node list' no sistema de destino.
+704;Register this edge node with Horizon.;Registrar este nó de ponta com o Horizon.
+705;The Horizon exchange node ID and token. The node ID must be unique within the organization. If not specified, HZN_EXCHANGE_NODE_AUTH will be used as a default. If both -n and HZN_EXCHANGE_NODE_AUTH are not specified, the node ID will be created by Horizon from the machine serial number or fully qualified hostname. If the token is not specified, Horizon will create a random token. If node resource in the exchange identified by the ID and token does not yet exist, you must also specify the -u flag so it can be created.;O ID do nó e o token do Horizon Exchange. O ID do nó deve ser exclusivo na organização.Se não especificado, HZN_EXCHANGE_NODE_AUTH será usado como padrão. Caso -n e HZN_EXCHANGE_NODE_AUTH não sejam especificados, o ID do nó será criado pelo Horizon a partir do número de série da máquina ou do nome completo do host. Se o token não for especificado, o Horizon criará um token aleatório. Se o recurso do nó no Exchange identificado pelo ID e o token ainda não existir, você deverá especificar também a sinalização -u para que seja possível criá-lo.
+706;The name of the node. If not specified, it will be the same as the node id.;O nome do nó. Se não especificado, será igual ao ID do nó.
+707;User credentials to create the node resource in the Horizon exchange if it does not already exist. If not specified, HZN_EXCHANGE_USER_AUTH will be used as a default.;As credenciais do usuário para criar o recurso do nó no Horizon Exchange, caso ele ainda não exista. Se não especificado, HZN_EXCHANGE_USER_AUTH será usado como padrão.
+708;Your email address. Only needs to be specified if: the node resource does not yet exist in the Horizon exchange, and the user specified in the -u flag does not exist, and you specified the 'public' org. If all of these things are true we will create the user and include this value as the email attribute.;Seu endereço de e-mail. Precisa ser especificado apenas se: o recurso do nó ainda não existir no Horizon Exchange e o usuário especificado na sinalização -u não existir e você tiver especificado a organização 'public'. Se essas afirmações forem verdadeiras, criaremos o usuário e incluiremos esse valor como o atributo de e-mail.
+709;A JSON file that sets or overrides variables needed by the node and services that are part of this pattern. See /usr/horizon/samples/input.json and /usr/horizon/samples/more-examples.json. Specify -f- to read from stdin.;Um arquivo JSON que configura ou substitui as variáveis necessárias para os nós e serviços que fazem parte deste padrão. Consulte /usr/horizon/samples/input.json e /usr/horizon/samples/more-examples.json. Especifique -f- para ler a partir de stdin.
+710;The Horizon exchange organization ID that the node should be registered in. The default is the HZN_ORG_ID environment variable. Mutually exclusive with <nodeorg> and <pattern> arguments.;O ID da organização do Horizon Exchange no qual o nó deve ser registrado. O padrão é a variável de ambiente HZN_ORG_ID. É mutuamente exclusivo com os argumentos <nodeorg> e <pattern>.
+711;The Horizon exchange pattern that describes what workloads that should be deployed to this node. If the pattern is from a different organization than the node, use the 'other_org/pattern' format. Mutually exclusive with <nodeorg> and <pattern> arguments and --policy flag.;O padrão do Horizon Exchange que descreve quais cargas de trabalho dever ser implementadas nesse nó. Se o padrão for de uma organização diferente do nó, use o formato 'other_org/pattern'. É mutuamente exclusivo com os argumentos <nodeorg> e <pattern> e a sinalização --policy.
+712;A JSON file that sets or overrides the node policy for this node that will be used for policy based agreement negotiation. Mutually exclusive with -p argument.;Um arquivo JSON que configura ou substitui a política desse nó que será usada para a negociação do acordo base da política. Mutuamente exclusivo com o argumento -p.
+713;The Horizon exchange organization ID that the node should be registered in. Mutually exclusive with -o and -p.;O ID da organização do Horizon Exchange no qual o nó deve ser registrado. Mutuamente exclusivo com -o e -p.
+714;The Horizon exchange pattern that describes what workloads that should be deployed to this node. If the pattern is from a different organization than the node, use the 'other_org/pattern' format. Mutually exclusive with -o, -p and --policy.;O padrão do Horizon Exchange que descreve quais cargas de trabalho devem ser implementadas nesse nó. Se o padrão for de uma organização diferente do nó, use o formato 'other_org/pattern'. Mutuamente exclusivo com -o, -p e --policy.
+715;List and manage keys for signing and verifying services.;Listar e gerenciar chaves para assinatura e verificação de serviços.
+716;List the signing keys that have been imported into this Horizon agent.;Listar as chaves de assinatura que foram importadas para este Horizon Agent.
+717;The name of a specific key to show.;O nome de uma chave específica a ser mostrada.
+718;List the names of all signing keys, even the older public keys not wrapped in a certificate.;Listar os nomes de todas as chaves de assinatura, mesmo as chaves públicas mais antigas, não agrupadas em um certificado.
+719;Generate a signing key pair.;Gerar um par de chaves de assinatura.
+720;x509 certificate Organization (O) field (preferably a company name or other organization's name).;Campo (O) da organização de certificados x509 (preferencialmente o nome de uma empresa ou o nome de outra organização).
+721;x509 certificate Common Name (CN) field (preferably an email address issued by x509org).;Campo (CN) do nome comum de um certificado x509 (preferencialmente um endereço de e-mail emitido por x509org).
+722;The directory to put the key pair files in. Mutually exclusive with -k and -K. The file names will be randomly generated.;O diretório no qual colocar os arquivos do par de chaves. Mutuamente exclusivo com -k e -K. Os nomes de arquivos são gerados aleatoriamente.
+723;The full path of the private key file. Mutually exclusive with -d. If not specified, the environment variable HZN_PRIVATE_KEY_FILE will be used. If none of them are set, ~/.hzn/keys/service.private.key is the default.;O caminho completo do arquivo de chave privado. Mutuamente exclusivo com -d. Se não especificado, a variável de ambiente HZN_PRIVATE_KEY_FILE será usada. Caso nenhum dos dois seja especificado, ~/.hzn/keys/service.private.key será o padrão.
+724;The full path of the public key file. Mutually exclusive with -d. If not specified, the environment variable HZN_PUBLIC_KEY_FILE will be used. If none of them are set, ~/.hzn/keys/service.public.pem is the default.;O caminho completo do arquivo de chave pública. Mutuamente exclusivo com -d. Se não especificado, a variável de ambiente HZN_PUBLIC_KEY_FILE será usada. Caso nenhum deles seja especificado, ~/.hzn/keys/service.public.pem será o padrão.
+725;Overwrite the existing files. It will skip the 'do you want to overwrite' prompt.;Substitua os arquivos existentes. Isso ignorará o prompt 'deseja sobrescrever'.
+726;The length of the key to create.;O comprimento da chave a ser criada.
+727;x509 certificate validity (Validity > Not After) expressed in days from the day of generation.;Validade do certificado x509 (Validity > Not After) expressa em dias a partir do dia da geração.
+728;Automatically import the created public key into the local Horizon agent.;Importar automaticamente a chave pública criada para o Horizon Agent local.
+729;Imports a signing public key into the Horizon agent.;Importa uma chave pública de assinatura para o Horizon Agent.
+730;The path of a pem public key file to be imported. The base name in the path is also used as the key name in the Horizon agent. If not specified, the environment variable HZN_PUBLIC_KEY_FILE will be used. If none of them are set, ~/.hzn/keys/service.public.pem is the default.;O caminho de um arquivo de chave pública pem a ser importado. O nome base no caminho também é usado como o nome da chave no Horizon Agent. Se não especificado, a variável de ambiente HZN_PUBLIC_KEY_FILE será usada. Caso nenhum deles seja especificado, ~/.hzn/keys/service.public.pem será o padrão.
+731;Remove the specified signing key from this Horizon agent.;Remover a chave de assinatura especificada deste Horizon Agent.
+732;The name of a specific key to remove.;O nome de uma chave específica a ser removida.
+733;List and manage general information about this Horizon edge node.;Listar e gerenciar informações gerais sobre este nó de ponta do Horizon.
+734;Display general information about this Horizon edge node.;Exibir informações gerais sobre este nó de ponta do Horizon.
+735;List and manage policy for this Horizon edge node.;Listar e gerenciar a política para este nó de ponta do Horizon.
+736;Display this edge node's policy.;Exibir a política deste nó de ponta.
+737;Display an empty policy template that can be filled in.;Exibir um modelo de política vazio que possa ser preenchido.
+738;Update the node's policy. The node's built-in properties will be automatically added if the input policy does not contain them.;Atualizar a política do nó. As propriedades integradas do nó serão automaticamente incluídas caso não estejam contidas na política de entrada.
+739;The JSON input file name containing the node policy.;O nome do arquivo de entrada JSON que contém a política do nó.
+740;Add or update node policy properties or overwrite the node policy constraint expression.;Incluir ou atualizar as propriedades de política do nó ou sobrescrever a expressão de restrição de política do nó.
+741;The new constraints or properties in the format '{Constraintsconstraint_list}' or '{Propertiesproperty_list}'.;As novas restrições ou propriedades no formato '{Constraintsconstraint_list}' ou '{Propertiesproperty_list}'.
+742;Remove the node's policy.;Remover a política do nó.
+743;List or manage the active or archived agreements this edge node has made with a Horizon agreement bot.;Listar ou gerenciar os contratos ativos ou arquivados que este nó de ponta fez com um robô de contrato do Horizon.
+744;List the active or archived agreements this edge node has made with a Horizon agreement bot.;Listar os contratos ativos ou arquivados que este nó de ponta fez com um robô de contrato do Horizon.
+745;Show the details of this active or archived agreement.;Mostra os detalhes deste contrato ativo ou arquivado.
+746;List archived agreements instead of the active agreements.;Listar os contratos arquivados, em vez dos contratos ativos.
+747;Cancel 1 or all of the active agreements this edge node has made with a Horizon agreement bot. Usually an agbot will immediately negotiated a new agreement. If you want to cancel all agreements and not have this edge accept new agreements, run 'hzn unregister'.;Cancelar 1 ou cancelar todos os contratos ativos que este nó de ponta fez com um robô de contrato do Horizon. Normalmente, um agbot negociará um novo contrato imediatamente. Se quiser cancelar todos os contratos e fazer com que esse nó de ponta não aceite novos contratos, execute 'hzn unregister'.
+748;Cancel all of the current agreements.;Cancelar todos os contratos atuais.
+749;The active agreement to cancel.;O contrato ativo a ser cancelado.
+750;List or manage the metering (payment) information for the active or archived agreements.;Listar ou gerenciar as informações de medição (pagamento) para os contratos ativos ou arquivados.
+751;List the metering (payment) information for the active or archived agreements.;Listar as informações de medição (pagamento) para os contratos ativos ou arquivados.
+752;List archived agreement metering information instead of metering for the active agreements.;Listar as informações de medição de contratos arquivados em vez da medição de contratos ativos.
+753;List or manage the global attributes that are currently registered on this Horizon edge node.;Listar ou gerenciar os atributos globais que estão atualmente registrados neste nó de ponta do Horizon.
+754;List the global attributes that are currently registered on this Horizon edge node.;Listar os atributos globais que estão atualmente registrados neste nó de ponta do Horizon.
+755;List or manage the service user inputs that are currently registered on this Horizon edge node.;Listar ou gerenciar as entradas do usuário de serviço que estão atualmente registradas neste nó de ponta do Horizon.
+756;List the service user inputs currently registered on this Horizon edge node.;Listar as entradas do usuário de serviço que estão atualmente registradas neste nó de ponta do Horizon.
+757;Display an empty userinput template.;Exibir um modelo de entrada do usuário vazio.
+758;Add a new user input object or overwrite the current user input object for this Horizon edge node.;Incluir um novo objeto de entrada do usuário ou sobrescrever o objeto de entrada do usuário atual para este nó de ponta do Horizon.
+759;The file path to the json file with the user input object. Specify -f- to read from stdin.;O caminho de arquivo para o arquivo JSON com o objeto de entrada do usuário. Especifique -f- para ler a partir de stdin.
+760;Update an existing user input object for this Horizon edge node.;Atualizar um objeto de entrada do usuário existente para este nó de ponta do Horizon.
+761;The file path to the json file with the updated user input object. Specify -f- to read from stdin.;O caminho de arquivo para o arquivo JSON com o objeto de entrada do usuário atualizado. Especifique -f- para ler a partir de stdin.
+762;Remove the user inputs that are currently registered on this Horizon edge node.;Remover as entradas do usuário que estão atualmente registradas neste nó de ponta do Horizon.
+763;Skip the 'Are you sure?' prompt.;Ignorar a parte 'Tem certeza?' .
+764;List or manage the services that are currently registered on this Horizon edge node.;Listar ou gerenciar os serviços que estão atualmente registrados neste nó de ponta do Horizon.
+765;List the services variable configuration that has been done on this Horizon edge node.;Listar a configuração da variável de serviços feita neste nó de ponta do Horizon.
+766;List the services that are currently registered on this Horizon edge node.;Listar os serviços que estão atualmente registrados neste nó de ponta do Horizon.
+767;List or manage the configuration state for the services that are currently registered on this Horizon edge node.;Listar ou gerenciar o estado de configuração dos serviços que estão atualmente registrados neste nó de ponta do Horizon.
+768;List the configuration state for the services that are currently registered on this Horizon edge node.;Listar o estado de configuração dos serviços que estão atualmente registrados neste nó de ponta do Horizon.
+769;Change the configuration state to 'suspend' for a service.;Alterar o estado de configuração de um serviço para 'suspend'.
+770;Change the configuration state to 'active' for a service.;Alterar o estado de configuração de um serviço para 'active'.
+771;Suspend all registerd services.;Suspender todos os serviços registrados.
+772;The organization of the service that should be suspended.;A organização do serviço que deve ser suspenso.
+773;The name of the service that should be suspended.;O nome do serviço que deve ser suspenso.
+774;Resume all registerd services.;Retomar todos os serviços registrados.
+775;The organization of the service that should be resumed.;A organização do serviço que deve ser retomado.
+776;The name of the service that should be resumed.;O nome do serviço que deve ser retomado.
+777;Unregister and reset this Horizon edge node so that it is ready to be registered again. Warning: this will stop all the Horizon services running on this edge node, and restart the Horizon agent.;Cancelar o registro e reconfigurar este nó de ponta do Horizon para que ele fique pronto para ser registrado novamente. Aviso: isso interromperá todos os serviços do Horizon em execução neste nó de ponta e reiniciará o Horizon Agent.
+778;Also remove this node resource from the Horizon exchange (because you no longer want to use this node with Horizon).;Remover também esse recurso de nó do Horizon Exchange (porque você não deseja mais usar esse nó com o Horizon).
+779;Also remove all the previous registration information. Use it only after the 'hzn unregister' command failed. Please capture the logs by running 'hzn eventlog list -a -l' command before using this flag.;Remover também todas as informações de registro anteriores. Utilizar somente em caso de falha do comando 'hzn unregister'. Antes de usar essa sinalização, capture os logs, executando o comando 'hzn eventlog list -a -l'.
+780;The number of minutes to wait for unregistration to complete. The default is zero which will wait forever.;O número de minutos a aguardar até a conclusão da remoção de registro. O padrão é zero, o que determina aguardar para sempre.
+781;Display the current horizon internal status for the node.;Exibir o status interno do horizonte atual para o nó.
+782;Show detailed status;Mostrar status detalhado
+783;List the event logs for the current or all registrations.;Listar os logs de eventos para o registro atual ou todos os registros.
+784;List all the event logs including the previous registrations.;Listar os logs de eventos, incluindo os registros anteriores.
+785;List event logs with details.;Listar logs de eventos com detalhes.
+786;Selection string. This flag can be repeated which means 'AND'. Each flag should be in the format of attribute=value, attribute~value, "attribute>value" or "attribute<value", where '~' means contains. The common attribute names are timestamp, severity, message, event_code, source_type, agreement_id, service_url etc. Use the '-l' flag to see all the attribute names.;Sequência de seleção. Essa sinalização pode ser repetida, o que significa 'AND'. Cada sinalização deve estar no formato attribute=value, attribute~value, "attribute>value" ou "attribute<value", em que '~' significa conter. Os nomes de atributos comuns são timestamp, severity, message, event_code, source_type, agreement_id, service_url etc. Use a sinalização '-l' para ver todos os nomes de atributos.
+787;Development tools for creation of services.;Ferramentas de desenvolvimento para a crição de serviços.
+788;Directory containing Horizon project metadata. If omitted, a subdirectory called 'horizon' under current directory will be used.;Diretório que contém os metadados do projeto do Horizon. Se omitido, será utilizado um subdiretório chamado 'horizon', contido no diretório atual.
+789;For working with a service project.;Para trabalhar com um projeto de serviço.
+790;Create a new service project.;Crie um novo projeto de serviço.
+791;The Org id that the service is defined within. If this flag is omitted, the HZN_ORG_ID environment variable is used.;O ID da organização na qual o serviço está definido. Se essa sinalização for omitida, a variável de ambiente HZN_ORG_ID será usada.
+792;The name of the service. If this flag and the -i flag are omitted, only the skeletal horizon metadata files will be generated.;O nome do serviço. Se essa sinalização e a sinalização -i forem omitidas, somente os arquivos de metadados da estrutura de tópicos do Horizon serão gerados.
+793;The version of the service. If this flag is omitted, '0.0.1' is used.;A versão do serviço. Se essa sinalização for omitida, '0.0.1' será usado.
+794;The docker container image base name without the version tag for the service. This command will add arch and version to the base name to form the final image name. The format is 'basename_arch:serviceversion'. This flag can be repeated to specify multiple images when '--noImageGen' flag is specified.;O nome base da imagem do contêiner do Docker sem a tag de versão para o serviço. Esse comando incluirá o arch e a versão no nome base para formar o nome da imagem final. O formato é 'basename_arch:serviceversion'. Essa sinalização pode ser repetida para especificar várias imagens quando a sinalização '--noImageGen' for especificada.
+795;Indicates that the image is built somewhere else. No image sample code will be created by this command. If this flag is not specified, files for generating a simple service image will be created under current directory.;Indica que a imagem foi construída em algum outro lugar. Nenhum código de amostra de imagem será criado por este comando. Se essa sinalização não for especificada, os arquivos para a geração de uma imagem de serviço simples serão criados no diretório atual.
+796;Indicates no pattern definition file will be created.;Indica que nenhum arquivo de definição padrão será criado.
+797;Indicate no policy file will be created.;Indica que nenhum arquivo de políticas será criado.
+798;Indicates the type of deployment that will be used, e.g. native (the default), or helm.;Indica o tipo de implementação que será usado, por exemplo, nativo (o padrão) ou Helm.
+799;Run a service in a mocked Horizon Agent environment.;Executar um serviço em um ambiente simulado do Horizon Agent.
+800;File containing user input values for running a test. If omitted, the userinput file for the project will be used.;Arquivo que contém valores de entrada do usuário para a execução de um teste. Se omitido, será usado o arquivo de entrada de usuário do projeto.
+801;File to be made available through the sync service APIs. This flag can be repeated to populate multiple files.;Arquivo a ser disponibilizado por meio das APIs do serviço de sincronização. Essa sinalização pode ser repetida para preencher vários arquivos.
+802;The type of file to be made available through the sync service APIs. All config files are presumed to be of the same type. This flag is required if any configFiles are specified.;O tipo de arquivo a ser disponibilizado por meio das APIs do serviço de sincronização. Presume-se que todos os arquivos de configuração sejam do mesmo tipo. Essa sinalização é necessária caso sejam especificados configFiles.
+803;Do not bring up file sync service (FSS) containers. They are brought up by default.;Não ativar contêineres do serviço de sincronização de arquivo (FSS). Eles são ativados por padrão.
+804;Horizon Exchange user credentials to query exchange resources. Specify it when you want to automatically fetch the missing dependent services from the exchange. The default is HZN_EXCHANGE_USER_AUTH environment variable. If you don't prepend it with the user's org, it will automatically be prepended with the value of the HZN_ORG_ID environment variable.;As credenciais do usuário do Horizon Exchange para consultar recursos do Exchange. Especifique quando quiser buscar automaticamente os serviços dependentes ausentes do Exchange. O padrão é a variável de ambiente HZN_EXCHANGE_USER_AUTH. Se o valor não for prefixado com a organização do usuário, ele será automaticamente prefixado com o valor da variável de ambiente HZN_ORG_ID.
+805;Stop a service that is running in a mocked Horizon Agent environment.;Parar um serviço que está em execução em um ambiente simulado do Horizon Agent.
+806;Validate the project for completeness and schema compliance.;Validar o projeto em relação à integridade e conformidade do esquema.
+807;File containing user input values for verification of a project. If omitted, the userinput file for the project will be used.;O arquivo que contém valores de entrada do usuário para a verificação de um projeto. Se omitido, será usado o arquivo de entrada de usuário do projeto.
+808;For working with project dependencies.;Para trabalhar com dependências do projeto.
+809;The URL of the service dependency in the exchange. Mutually exclusive with -p and --url.;A URL da dependência de serviço no Exchange. Mutuamente exclusivo com -p e --url.
+810;The URL of the service dependency in the exchange. Mutually exclusive with -p and --specRef.;A URL da dependência de serviço no Exchange. Mutuamente exclusivo com -p e --specRef.
+811;The Org of the service dependency in the exchange. Mutually exclusive with -p.;A organização da dependência de serviço no Exchange. Mutuamente exclusivo com -p.
+812;(optional) The Version of the service dependency in the exchange. Mutually exclusive with -p.;(Opcional) A versão da dependência de serviço no Exchange. Mutuamente exclusivo com -p.
+813;(optional) The hardware Architecture of the service dependency in the exchange. Mutually exclusive with -p.;(Opcional) A arquitetura de hardware da dependência de serviço no Exchange. Mutuamente exclusivo com -p.
+814;Retrieving Horizon metadata for a new dependency.;Recuperando metadados do Horizon para uma nova dependência.
+815;Horizon project containing the definition of a dependency. Mutually exclusive with -s -o --ver -a and --url.;Projeto do Horizon que contém a definição de uma dependência. Mutuamente exclusivo com -s -o --ver -a e --url.
+816;Horizon Exchange user credentials to query exchange resources. The default is HZN_EXCHANGE_USER_AUTH environment variable. If you don't prepend it with the user's org, it will automatically be prepended with the value of the HZN_ORG_ID environment variable.;As credenciais do usuário do Horizon Exchange para consultar recursos do Exchange. O padrão é a variável de ambiente HZN_EXCHANGE_USER_AUTH. Se o valor não for prefixado com a organização do usuário, ele será automaticamente prefixado com o valor da variável de ambiente HZN_ORG_ID.
+817;File containing user input values for configuring the new dependency. If omitted, the userinput file in the dependency project will be used.;Arquivo que contém valores de entrada do usuário para a configuração de uma nova dependência. Se omitido, será usado o arquivo de entrada do usuário no projeto de dependência.
+818;List all dependencies.;Listar todas as dependências.
+819;Remove a project dependency.;Remover uma dependência de projeto.
+820;List and manage Horizon agreement bot resources.;Listar e gerenciar os recursos do robô de contrato do Horizon.
+821;Display general information about this Horizon agbot node.;Exibir informações gerais sobre este nó agbot do Horizon.
+822;List or manage the active or archived agreements this Horizon agreement bot has with edge nodes.;Listar ou gerenciar os contratos ativos ou arquivados que este robô de contrato do Horizon possui com nós de ponta.
+823;List the active or archived agreements this Horizon agreement bot has with edge nodes.;Listar os contratos ativos ou arquivados que este robô de contrato do Horizon possui com nós de ponta.
+824;List just this one agreement.;Listar apenas este único contrato.
+825;Cancel 1 or all of the active agreements this Horizon agreement bot has with edge nodes. Usually an agbot will immediately negotiated a new agreement.;Cancelar 1 ou todos os contratos ativos que este robô de contrato do Horizon possui com nós de ponta. Normalmente, um agbot negociará um novo contrato imediatamente.
+826;List the policies this Horizon agreement bot hosts.;Listar as políticas hospedadas por este robô de contrato do Horizon.
+827;List policies this Horizon agreement bot hosts.;Listar as políticas hospedadas por este robô de contrato do Horizon.
+828;The organization the policy belongs to.;A organização à qual a política pertence.
+829;The policy name.;O nome da política.
+830;Display the current horizon internal status for the Horizon agreement bot.;Exibir o status interno atual do Horizon para o robô de contrato do Horizon.
+831;Utility commands.;Comandos do utilitário.
+832;Sign the text in stdin. The signature is sent to stdout.;Assinar o texto em stdin. A assinatura é enviada para stdout.
+833;The path of a private key file to be used to sign the stdin.;O caminho de um arquivo de chave privado a ser usado para assinar o stdin.
+834;Verify that the signature specified via -s is a valid signature for the text in stdin.;Verifique se a assinatura especificada por meio de -s é uma assinatura válida para o texto em stdin.
+835;The path of public key file (that corresponds to the private key that was used to sign) to verify the signature of stdin.;O caminho do arquivo de chave pública (que corresponde à chave privada usada para a assinatura) para verificar a assinatura de stdin.
+836;The supposed signature of stdin.;A suposta assinatura de stdin.
+837;Convert the configuration file from JSON format to a shell script.;Converter o arquivo de configuração do formato JSON para um shell script.
+838;The path of a configuration file to be converted.;O caminho de um arquivo de configuração a ser convertido.
+839;List and manage Horizon Model Management Service resources.;Listar e gerenciar os recursos do serviço de gerenciamento de modelo do Horizon.
+840;The Horizon organization ID. If not specified, HZN_ORG_ID will be used as a default.;O ID da organização do Horizon. Se não especificado, HZN_ORG_ID será usado como padrão.
+841;Horizon user credentials to query and create Model Management Service resources. If not specified, HZN_EXCHANGE_USER_AUTH will be used as a default. If you don't prepend it with the user's org, it will automatically be prepended with the -o value.;As credenciais do usuário do Horizon para consultar e criar recursos do serviço de gerenciamento de modelo. Se não especificado, HZN_EXCHANGE_USER_AUTH será usado como padrão. Se o valor não for prefixado com a organização do usuário, ele será automaticamente prefixado com o valor -o.
+842;Display the status of the Horizon Model Management Service.;Exibir o status do serviço de gerenciamento de modelo do Horizon.
+843;List and manage objects in the Horizon Model Management Service.;Listar e gerenciar objetos no serviço de gerenciamento de modelo do Horizon.
+844;List objects in the Horizon Model Management Service.;Listar objetos no serviço de gerenciamento de modelo do Horizon.
+845;The type of the object to list.;O tipo de objeto a ser listado.
+846;The id of the object to list. This flag is optional. Omit this flag to list all objects of a given object type.;O ID do objeto a ser listado. Este sinalizador é opcional. Omita essa sinalização para listar todos os objetos de um determinado tipo.
+847;Provides additional detail about the deployment of the object on edge nodes. This flag is only used when --id is specified.;Fornece detalhes adicionais sobre a implementação do objeto em nós de ponta. Essa sinalização é usada apenas quando --id é especificado.
+848;Display an empty object metadata template that can be filled in and passed as the -m option on the 'hzn mms object publish' command.;Exibir um modelo de metadados de objeto vazio que possa ser preenchido e transmitido como a opção -m no comando 'hzn mms object publish'.
+849;Publish an object in the Horizon Model Management Service, making it available for services deployed on nodes.;Publicar um objeto no serviço de gerenciamento de modelo do Horizon, disponibilizando-o para os serviços implementados em nós.
+850;The type of the object to publish. This flag must be used with -i. It is mutually exclusive with -m;O tipo de objeto a ser publicado. Essa sinalização deve ser usada com -i. Ela é mutuamente exclusiva com -m
+851;The id of the object to publish. This flag must be used with -t. It is mutually exclusive with -m;O ID do objeto a ser publicado. Essa sinalização deve ser usada com -t. Ela é mutuamente exclusiva com -m
+852;If you want the object to be deployed on nodes using a given pattern, specify it using this flag. This flag is optional and can only be used with --type and --id. It is mutually exclusive with -m;Se quiser que o objeto seja implementado nos nós usando um determinado padrão, especifique-o utilizando essa sinalização. Essa sinalização é opcional e pode ser usada apenas com --type e --id. Ela é mutuamente exclusiva com -m
+853;The definition of the object to publish. A blank template can be obtained from the 'hzn mss object new' command.;A definição do objeto a ser publicado. É possível usar o comando 'hzn mss object new' para obter um modelo em branco.
+854;The object (in the form of a file) to publish. This flag is optional so that you can update only the object's definition.;O objeto (no formato de um arquivo) a ser publicado. Essa sinalização é opcional, para que seja possível atualizar apenas a definição do objeto.
+855;The type of the object to delete.;O tipo de objeto a ser excluído.
+856;The id of the object to delete.;O ID do objeto a ser excluído.
+857;organization ID must be specified with either the -o flag or HZN_ORG_ID;O ID da organização deve ser especificado com a sinalização -o ou com HZN_ORG_ID
+858;exchange user authentication must be specified with either the -u flag or HZN_EXCHANGE_USER_AUTH;A autenticação do usuário do Exchange deve ser especificada com a sinalização -u ou com HZN_EXCHANGE_USER_AUTH
+859;Deployment config {Arg_1} contains unsupported capability for a workload;A configuração de implementação {Arg_1} contém um recurso não suportado para uma carga de trabalho
+860;Deployment config {Arg_1} contains unsupported capability for infrastructure container.;A configuração de implementação {Arg_1} contém um recurso não suportado para o contêiner de infraestrutura.
+861;Deployment config {Arg_1} contains unsupported bind for a workload, {Arg_2};A configuração de implementação {Arg_1} contém uma ligação não suportada para uma carga de trabalho, {Arg_2}
+862;Deployment config {Arg_1} contains unsupported bind for {Arg_2}, {Arg_3};A configuração de implementação {Arg_1} contém uma ligação não suportada para {Arg_2}, {Arg_3}
+863;Error Unmarshalling deployment string {Arg_1}, error: {Arg_2};Erro ao Desserializar a sequência de implementação {Arg_1}, erro: {Arg_2}
+864;Error Unmarshalling deployment override string {Arg_1} for agreement {Arg_2}, error: {Arg_3};Erro ao Desserializar a sequência de substituição de implementação {Arg_1} para o contrato {Arg_2}, erro: {Arg_3}
+865;Error starting containers: {Arg_1};Erro ao iniciar os contêineres: {Arg_1}
+866;Error starting containers for agreement {Arg_1}: {Arg_2};Erro ao iniciar contêineres para o contrato {Arg_1}: {Arg_2}
+867;Error restarting containers for agreements {Arg_1}: {Arg_2};Erro ao reiniciar contêineres para os contratos {Arg_1}: {Arg_2}
+868;Error cleaning up old containers before starting up new containers for {Arg_1}. Error: {Arg_2};Erro ao limpar contêineres antigos antes de iniciar novos contêineres para {Arg_1}. Erro: {Arg_2}
+869;Failed to get a list of parent containers for service retry for {Arg_1}. {Arg_2};Falha ao obter uma lista de contêineres pai para a nova tentativa de serviço para {Arg_1}. {Arg_2}
+870;Failed to restoring the network connection with the parents for service {Arg_1}. {Arg_2};Falha ao restaurar a conexão de rede com os pais para o serviço {Arg_1}. {Arg_2}
+871;[verbose] {M};[verbose] {M}
+872;Error: {Msg};Erro: {Msg}
+873;Warning: {Msg};Aviso: {Msg}
+874;failed to unmarshal bytes from {ErrMsg}: {Err};Falha ao desserializar bytes de {ErrMsg}: {Err}
+875;failed to marshal data type from {ErrMsg}: {Err};Falha ao serializar o tipo de dados de {ErrMsg}: {Err}
+876;problem testing api key match: {Err};Problema ao testar a correspondência da chave de API: {Err}
+877;Using API key;Usando a chave de API
+878;unable to create docker client: {Err};Não é possível criar o cliente Docker: {Err}
+879;docker auth domainName: {DomainName};domainName de autenticação do Docker: {DomainName}
+880;unable to find docker credentials for {Domain};Não é possível localizar credenciais do Docker para {Domain}
+881;Pushing {Repository}:{Tag}...;Enviando por push {Repository}:{Tag}...
+882;could not get docker credentials from ~/.docker/config.json: {Err}. Maybe you need to run 'docker login ...' to provide credentials for the image registry.;Não foi possível obter credenciais do Docker a partir de ~/.docker/config.json: {Err}. Talvez seja necessário executar 'docker login ...' para fornecer credenciais para o registro de imagem.
+883;unable to push docker image {Repository____tag}: {Err};Não é possível enviar a imagem do Docker por push {Repository____tag}: {Err}
+884;could not find the image digest in the docker push output;Não foi possível localizar a compilação de imagem na saída de push do Docker
+885;Pulling {Repository}:{Tag}...;Extraindo {Repository}:{Tag}...
+886;unable to pull docker image {Repository____tag}. Docker credentials were not found. Maybe you need to run 'docker login ...' if the image registry is private. Error: {Err};Não é possível extrair a imagem do Docker {Repository____tag}. As credenciais do Docker não foram localizadas. Talvez seja necessário executar 'docker login ...' se o registro de imagem for privado. Erro: {Err}
+887;unable to pull docker image {Repository____tag}: {Err};Não é possível extrair a imagem do Docker {Repository____tag}: {Err}
+888;the resource id can not contain more than 1 '/';O ID do recurso não pode conter mais de 1 '/'
+889;reading stdin failed: {Err};Falha na leitura de stdin: {Err}
+890;reading {FilePath} failed: {Err};Falha na leitura de {FilePath}: {Err}
+891;Warning: environment variable '{EnvVarName}' is referenced in input file, but not defined in the environment.;Aviso: a variável de ambiente '{EnvVarName}' é referenciada no arquivo de entrada, mas não foi definida no ambiente.
+892;Error scanning input, error {Err};Erro ao varrer a entrada, erro {Err}
+893;Error reading HTTP response, error {Err};Erro ao ler a resposta de HTTP, erro {Err}
+894;Can't connect to the Horizon REST API to run {ApiMethod}. Run 'systemctl status horizon' to check if the Horizon agent is running. Or set HORIZON_URL to connect to another local port that is connected to a remote Horizon agent via a ssh tunnel. Specific error is: {Err};Não é possível se conectar à API de REST do Horizon para executar {ApiMethod}. Execute 'systemctl status horizon' para verificar se o Horizon Agent está em execução. Ou configure HORIZON_URL para se conectar a outra porta local que esteja conectada a um Horizon Agent remoto por meio de um túnel de ssh. O erro específico é: {Err}
+895;Can't connect to the Horizon REST API to run {ApiMethod}. Maybe the ssh tunnel associated with that port is down? Or maybe the remote Horizon agent at the other end of that tunnel is down. Specific error is: {Err};Não é possível se conectar à API de REST do Horizon para executar {ApiMethod}. Talvez o túnel de ssh associado a essa porta esteja inativo? Ou talvez o Horizon Agent remoto na outra extremidade desse túnel esteja inativo. O erro específico é: {Err}
+896;{ApiMsg} new request failed: {Err};A nova solicitação {ApiMsg} falhou: {Err}
+897;Bad HTTP code from {ApiMsg}: {HttpCode};Código HTTP inválido de {ApiMsg}: {HttpCode}
+898;bad HTTP code from {ApiMsg}: {HttpCode};Código HTTP inválido de {ApiMsg}: {HttpCode}
+899;Failed to read body response from {ApiMsg}: {Err};Falha ao ler a resposta do corpo de {ApiMsg}: {Err}
+900;failed to read body response from {ApiMsg}: {Err};Falha ao ler a resposta do corpo de {ApiMsg}: {Err}
+901;Failed to unmarshal body response from {ApiMsg}: {Err};Falha ao desserializar a resposta do corpo de {ApiMsg}: {Err}
+902;failed to unmarshal body response from {ApiMsg}: {Err};Falha ao desserializar a resposta do corpo de {ApiMsg}: {Err}
+903;bad HTTP code {HttpCode} from {ApiMsg}: {Body};Código HTTP inválido {HttpCode} de {ApiMsg}: {Body}
+904;failed to marshal body for {ApiMsg}: {Err};Falha ao serializar o corpo para {ApiMsg}: {Err}
+905;Failed to unmarshal bytes. {Err};Falha ao desserializar bytes. {Err}
+906;Error getting HZN_ICP_CA_CERT_PATH from {ANAXOVERWRITEFILE}: {Err};Erro ao obter HZN_ICP_CA_CERT_PATH de {ANAXOVERWRITEFILE}: {Err}
+907;Error getting HZN_EXCHANGE_URL from {ANAXOVERWRITEFILE}. {Err};Erro ao obter HZN_EXCHANGE_URL de {ANAXOVERWRITEFILE}. {Err}
+908;Error getting ExchangeUrl from {ANAXCONFIGFILE}. {Err};Erro ao obter ExchangeUrl de {ANAXCONFIGFILE}. {Err}
+909;HZN_EXCHANGE_URL is not set, get it from horizon agent configuration on the node.;HZN_EXCHANGE_URL não está configurado, obtenha-o a partir da configuração do Horizon Agent no nó.
+910;Could not get the exchange url from environment variable HZN_EXCHANGE_URL or the horizon agent;Não foi possível obter a URL do Exchange a partir da variável de ambiente HZN_EXCHANGE_URL ou do Horizon Agent
+911;The exchange url: {ExchUrl};A URL do Exchange: {ExchUrl}
+912;Error getting HZN_FSS_CSSURL from {ANAXOVERWRITEFILE}. {Err};Erro ao obter HZN_FSS_CSSURL de {ANAXOVERWRITEFILE}. {Err}
+913;Error getting model management service Url from {ANAXCONFIGFILE}. {Err};Erro ao obter a URL do serviço de gerenciamento de modelo a partir de {ANAXCONFIGFILE}. {Err}
+914;HZN_FSS_CSSURL is not set, get it from horizon agent configuration on the node.;HZN_FSS_CSSURL não está configurado, obtenha-o a partir da configuração do Horizon Agent no nó.
+915;Could not get the model management service url from environment variable HZN_FSS_CSSURL or the horizon agent;Não foi possível obter a URL do serviço de gerenciamento de modelo a partir da variável de ambiente HZN_FSS_CSSURL ou do Horizon Agent
+916;The model management service url: {MmsUrl};A URL do serviço de gerenciamento de modelo: {MmsUrl}
+917;Can't connect to the Horizon {HorizonService} REST API to run {ApiMethod}. Set {ServiceEnvVarName} to use {Article} {HorizonService_1} other than the one the Horizon Agent is currently configured for. Specific error is: {Err};Não é possível se conectar à API de REST do Horizon {HorizonService} para executar {ApiMethod}. Configure {ServiceEnvVarName} para usar {Article} {HorizonService_1}, em vez do que está atualmente configurado para o Horizon Agent. O erro específico é: {Err}
+918;Can't connect to the Horizon {HorizonService} REST API to run {ApiMethod}. Maybe {ServiceEnvVarName} is set incorrectly? Or unset {ServiceEnvVarName_1} to use the {HorizonService_1} that the Horizon Agent is configured for. Specific error is: {Err};Não é possível se conectar à API de REST do Horizon {HorizonService} para executar {ApiMethod}. Talvez {ServiceEnvVarName} esteja configurado incorretamente? Ou desconfigure {ServiceEnvVarName_1} para usar o {HorizonService_1} para o qual o Horizon Agent está configurado. O erro específico é: {Err}
+919;Encountered HTTP error: {Err} calling {Service} REST API {ApiMsg}. Will retry.;Erro de HTTP encontrado: {Err} chamando a API de REST {ApiMsg} de {Service}. Será feita nova tentativa.
+920;Encountered HTTP error: {Err} calling {Service} REST API {ApiMsg};Erro de HTTP encontrado: {Err} chamando a API de REST {ApiMsg} de {Service}
+921;bad HTTP code {HttpCode} from {ApiMsg}, output: {StringbodyBytes};Código HTTP inválido {HttpCode} de {ApiMsg}, saída: {StringbodyBytes}
+922;failed to unmarshal exchange body response from {ApiMsg}: {Err};Falha ao desserializar a resposta do corpo do Exchange de {ApiMsg}: {Err}
+923;failed to marshal exchange output from {ApiMsg}: {Err};Falha ao serializar a saída do Exchange de {ApiMsg}: {Err}
+924;failed to marshal exchange body for {ApiMsg}: {Err};Falha ao serializar o corpo do Exchange para {ApiMsg}: {Err}
+925;failed to read exchange body response from {ApiMsg}: {Err};Falha ao ler a resposta do corpo do Exchange de {ApiMsg}: {Err}
+926;bad HTTP code {HttpCode} from {ApiMsg}: {Code}, {Msg};Código HTTP inválido {HttpCode} de {ApiMsg}: {Code}, {Msg}
+927;bad HTTP code {HttpCode} from {ApiMsg};Código HTTP inválido {HttpCode} de {ApiMsg}
+928;exchange authentication must be specified with one of the following: the -u flag, the -n flag, HZN_EXCHANGE_USER_AUTH or HZN_EXCHANGE_NODE_AUTH;A autenticação do Exchange deve ser especificada com um dos seguintes: a sinalização -u, a sinalização -n, HZN_EXCHANGE_USER_AUTH ou HZN_EXCHANGE_NODE_AUTH
+929;Failed to get absolute path for file {PrivKeyFile}. {Err};Falha ao obter o caminho absoluto para o arquivo {PrivKeyFile}. {Err}
+930;{Err}. Please create the signing key.;{Err}. Crie a chave de assinatura.
+931;running: {CmdStr};Executando: {CmdStr}
+932;did not get a command object;Não foi obtido um objeto de comando
+933;Could not get Stdin pipe, error: {Err};Não foi possível obter o canal Stdin, erro: {Err}
+934;could not retrieve output from command, error: {Err};Não foi possível recuperar a saída do comando, erro: {Err}
+935;could not retrieve stderr from command, error: {Err};Não foi possível recuperar stderr do comando, erro: {Err}
+936;Unable to start command, error: {Err};Não foi possível iniciar o comando, erro: {Err}
+937;Unable to write to stdin of command, error: {Err};Não é possível gravar no stdin do comando, erro: {Err}
+938;Unable to close stdin, error: {Err};Não é possível fechar stdin, erro: {Err}
+939;could not read stdout, error: {Err};Não foi possível ler stdout, erro: {Err}
+940;could not read stderr, error: {Err};Não foi possível ler stderr, erro: {Err}
+941;command failed: {Err}, stderr: {StringstderrBytes};O comando falhou: {Err}, stderr: {StringstderrBytes}
+942;Unable to marshal userinput object: {Err};Não é possível serializar o objeto de entrada do usuário: {Err}
+943;A list of objects, each one containing the user inputs required for a specified service.;Uma lista de objetos, cada um contendo as entradas do usuário necessárias para um serviço especificado.
+944;The horizon org of the specified service.;A organização do Horizon do serviço especificado.
+945;The unique string used to identify the specified service.;A sequência exclusiva usada para identificar o serviço especificado.
+946;The service architecture that these inputs apply to. Omit or leave blank to mean all architectures.;A arquitetura de serviço à qual essas entradas se aplicam. Omita ou deixe em branco para significar todas as arquiteturas.
+947;The service versions that these inputs apply to. Omit or specify "[0.0.0,INFINITY)" to mean all versions.;As versões de serviço às quais essas entradas se aplicam. Omita ou especifique "[0.0.0,INFINITY)" para significar todas as versões.
+948;A list of objects with the names and values for the user inputs used by this service.;Uma lista de objetos com os nomes e valores para as entradas do usuário usadas por este serviço.
+949;Error unmarshaling userInput json file: {Err};Erro ao desserializar o arquivo JSON de userInput: {Err}
+950;Are you sure you want to remove the node user inputs?;Tem certeza de que deseja remover as entradas do usuário do nó?
+951;{Image} parsed into: domain={Domain}, path={Path}, tag={Tag};{Image} analisada em: domain={Domain}, path={Path}, tag={Tag}
+952;Warning: could not parse image path '{Image}'. Not pushing it to a docker registry, just including it in the 'deployment' field as-is.;Aviso: não foi possível analisar o caminho da imagem '{Image}'. Não será enviado por push para um registro do Docker, apenas incluído no campo 'deployment' no estado em que se encontra.
+953;Using '{NewImage}' in 'deployment' field instead of '{Image}';Usando '{NewImage}' no campo 'deployment' em vez de '{Image}'
+954;failed to marshal deployment string {Dep}, error {Err};Falha ao serializar a sequência de implementação {Dep}, erro {Err}
+955;problem signing deployment string with {KeyFilePath}: {Err};Problema ao assinar a sequência de implementação com {KeyFilePath}: {Err}
+956;each service defined under 'deployment.services' must be a json object (with strings as the keys);Cada serviço definido em 'deployment.services' deve ser um objeto JSON (com sequências como as chaves)
+957;service '{SvcName}' defined under 'deployment.services' does not have mandatory 'image' field;O serviço '{SvcName}' definido em 'deployment.services' não possui o campo obrigatório 'image'
+958;service '{SvcName}' defined under 'deployment.services' has unrecognized field '{K}'. See https://github.com/open-horizon/anax/blob/master/doc/deployment_string.md;O serviço '{SvcName}' definido em 'deployment.services' possui um campo não reconhecido '{K}'. Consulte https://github.com/open-horizon/anax/blob/master/doc/deployment_string.md
+959;the 'deployment' field must contain the 'services' field, whose value must be a json object (with strings as the keys);O campo 'deployment' deve conter o campo 'services', cujo valor deve ser um objeto JSON (com sequências como as chaves)
+960;the 'deployment' field must contain either the native Horizon deployment config or the Helm deployment config, whose value must be a json object (with strings as the keys);O campo 'deployment' deve conter a configuração de implementação nativa do Horizon ou a configuração de implementação do Helm, cujo valor deve ser um objeto JSON (com sequências como chaves)
+961;'{SERVICECOMMAND} {SERVICESTARTCOMMAND}' unable to start file sync service, {Sserr};'{SERVICECOMMAND} {SERVICESTARTCOMMAND}' não é capaz de iniciar o serviço de sincronização de arquivo, {Sserr}
+962;'{SERVICECOMMAND} {SERVICESTARTCOMMAND}' unable to get service dependencies, {Derr};'{SERVICECOMMAND} {SERVICESTARTCOMMAND}' não é capaz de obter dependências de serviço, {Derr}
+963;Starting dependencies.;Iniciando dependências.
+964;'{SERVICECOMMAND} {SERVICESTARTCOMMAND}' unable to start service dependencies, {Perr};'{SERVICECOMMAND} {SERVICESTARTCOMMAND}' não é capaz de iniciar dependências de serviço, {Perr}
+965;'{SERVICECOMMAND} {SERVICESTARTCOMMAND}' unable to generate test agreementId, {Aerr};'{SERVICECOMMAND} {SERVICESTARTCOMMAND}' não é capaz de gerar o agreementId de teste, {Aerr}
+966;'{SERVICECOMMAND} {SERVICESTOPCOMMAND}' unable to stop service dependencies, {Err};'{SERVICECOMMAND} {SERVICESTOPCOMMAND}' não é capaz de parar as dependências de serviço, {Err}
+967;'{SERVICECOMMAND} {SERVICESTARTCOMMAND}' unable to stop file sync service, {Sserr};'{SERVICECOMMAND} {SERVICESTARTCOMMAND}' não é capaz de parar o serviço de sincronização de arquivo, {Sserr}
+968;Stopped service.;Serviço interrompido.
+969;failed to marshal '/service/config' output attribute {Attr}. {Err};Falha ao serializar o atributo de saída {Attr} de '/service/config'. {Err}
+970;failed to convert '/service/config' output attribute {Attr} to its original type. {Err};Falha ao converter o atributo de saída {Attr} de '/service/config' em seu tipo original. {Err}
+971;failed to marshal 'hzn service list' output: {Err};Falha ao serializar a saída 'hzn service list': {Err}
+972;failed to marshal 'hzn service registered' output: {Err};Falha ao serializar a saída 'hzn service registered': {Err}
+973;failed to marshal 'hzn service configstate' output: {Err};Falha ao serializar a saída 'hzn service configstate': {Err}
+974;all the registered services;Todos os serviços registrados
+975;service {ServiceOrg}/{ServiceUrl};Serviço {ServiceOrg}/{ServiceUrl}
+976;all the registered services from organization {ServiceOrg};Todos os serviços registrados da organização {ServiceOrg}
+977;Please specify the organization for service {ServiceUrl}.;Especifique a organização para o serviço {ServiceUrl}.
+978;Are you sure you want to suspend {Msgpart} for this Horizon node?;Tem certeza de que deseja suspender {Msgpart} para este nó do Horizon?
+979;Suspending {Msgpart}, cancelling releated agreements, stopping related service containers...;Suspendendo {Msgpart}, cancelando os contratos relacionados, parando os contêineres de serviço relacionados...
+980;Resuming {Msgpart} ...;Retomando {Msgpart} ...
+981;failed to marshal 'key list' output: {Err};Falha ao serializar a saída 'key list': {Err}
+982;horizon api trust output did not include 'pem' key;A saída de confiança da API do Horizon não incluiu a chave 'pem'
+983;failed to create a new key pair: {Err};Falha ao criar um novo par de chaves: {Err}
+984;Move private key file from {PrivKeyName} to {PrivKeyFile};Mover arquivo de chave privado de {PrivKeyName} para {PrivKeyFile}
+985;failed to move private key file from {PrivKeyName} to {PrivKeyFile}. {Err};Falha ao mover o arquivo de chave privado de {PrivKeyName} para {PrivKeyFile}. {Err}
+986;Move public key file from {PubKeyName} to {PubKeyFile}.;Mover o arquivo de chave pública de {PubKeyName} para {PubKeyFile}.
+987;failed to move public key file from {PubKeyName} to {PubKeyFile}. {Err};Falha ao mover o arquivo de chave pública de {PubKeyName} para {PubKeyFile}. {Err}
+988;Created keys:\\ 	{PrivKeyFile}\\	{PubKeyFile};Chaves criadas:\\ 	{PrivKeyFile}\\	{PubKeyFile}
+989;asked to import the created public key, but can not determine the name.;Solicitada a importação da chave pública criada, mas não foi possível determinar o nome.
+990;Importing public key file {PubKeyFile} to the Horizon agent.;Importando o arquivo de chave pública {PubKeyFile} para o Horizon Agent.
+991;{PubKeyFile} imported to the Horizon agent;{PubKeyFile} importado para o Horizon Agent
+992;Public key '{KeyName}' removed from the Horizon agent.;Chave pública '{KeyName}' removida do Horizon Agent.
+993;-d is mutually exclusive with -k and -K;-d é mutuamente exclusivo com -k e -K
+994;Creating directory {OutputDirPub}.;Criando o diretório {OutputDirPub}.
+995;{PrivKeyFile} is a directory. Please specify a file name.;{PrivKeyFile} é um diretório. Especifique um nome de arquivo.
+996;File {PrivKeyFile} and {PubKeyFile} exist, do you want to overwrite?;Os arquivos {PrivKeyFile} e {PubKeyFile} existem, deseja sobrescrever?
+997;File {PrivKeyFile} exists, do you want to overwrite?;O arquivo {PrivKeyFile} existe, deseja sobrescrever?
+998;Deleting file {PrivKeyFile}.;Excluindo o arquivo {PrivKeyFile}.
+999;cleaned {String} resulted in an empty string.;A limpeza de {String} resultou em uma sequência de caracteres vazia.
+1000;plugin context must include 'currentDir' as the current directory of the service definition file;O contexto de plug-in deve incluir 'currentDir' como o diretório atual do arquivo de definição de serviço
+1001;unable to read chart archive {Depchartarchive}, error {Err};Não é possível ler o archive de gráfico {Depchartarchive}, erro {Err}
+1002;chart_archive must have a string type value, has {C};chart_archive deve ter um valor de tipo de sequência e tem {C}
+1003;release_name must have a string type value, has {R};release_name deve ter um valor de tipo de sequência e tem {R}
+1004;chart_archive and release_name must be non-empty strings;chart_archive e release_name devem ser sequências não vazias
+1005;'{SERVICECOMMAND} {SERVICESTARTCOMMAND}' not supported for Helm deployments;'{SERVICECOMMAND} {SERVICESTARTCOMMAND}' não suportado para implementações do Helm
+1006;problem signing stdin with {PrivKeyFilePath}: {Err};Problema ao assinar stdin com {PrivKeyFilePath}: {Err}
+1007;Failed to get the variables from configuration file {CofigFile}. Error: {Err};Falha ao obter as variáveis do arquivo de configuração {CofigFile}. Erro: {Err}
